@@ -1,0 +1,311 @@
+{
+  "id": "ep07",
+  "number": 7,
+  "title": "صَلَاحُ الدِّينِ الْأَيُّوبِيُّ",
+  "hero": {
+    "name": "صلاح الدين يوسف بن أيوب",
+    "era": "1137–1193 م",
+    "place": "تكريت · القاهرة · دمشق · القدس"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "بهاء الدين بن شداد، النوادر السلطانية والمحاسن اليوسفية",
+    "ابن الأثير، الكامل في التاريخ: أحداث سنة 583 هـ",
+    "Encyclopaedia Britannica: Saladin"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "كَيْفَ يَكُونُ الْمُنْتَصِرُ رَحِيمًا بِمَنْ هَزَمَهُمْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: a paper olive branch curls into a gold question mark over the dark shelves"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، لِمَاذَا رُسِمَتْ هَذِهِ الْقُبَّةُ بِالذَّهَبِ؟",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "library: faris points at a gold dome drawn on the open page"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "إِنَّهَا قُبَّةُ الصَّخْرَةِ فِي الْقُدْسِ، وَسَتَعْرِفُ حِكَايَتَهَا الْآنْ. هَذِهِ الصَّفْحَةُ يَا فَارِسُ تَحْكِي عَنْ قَائِدٍ عُرِفَ بِالْعَدْلِ وَالرَّحْمَةِ، حَتَّى عِنْدَ أَعْدَائِهْ.",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "library: grandpa smooths the page flat under the lamp"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَنْ هُوَ؟",
+          "sfx": [],
+          "visual_beat": "library: faris leans closer"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "صَلَاحُ الدِّينِ يُوسُفُ بْنُ أَيُّوبَ، الَّذِي نَعْرِفُهُ بِصَلَاحِ الدِّينِ الْأَيُّوبِيّْ.",
+          "sfx": [
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: the page unfolds into paper hills with a fortress on a river bank at dawn"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "صَلَاحُ الدِّينِ؟ سَمِعْتُ بِهِ كَثِيرًا!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "تِكْرِيتُ ثُمَّ دِمَشْقُ وَمِصْرُ",
+      "layers": [
+        "sky_dawn",
+        "river",
+        "fortress",
+        "city_damascus",
+        "city_cairo",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وُلِدَ فِي تِكْرِيتَ بِالْعِرَاقِ سَنَةَ أَلْفٍ وَمِئَةٍ وَسَبْعٍ وَثَلَاثِينَ لِلْمِيلَادِ، فِي أُسْرَةٍ كُرْدِيَّةٍ عُرِفَتْ بِالْقِيَادَةِ وَالْفُرُوسِيَّةْ.",
+          "sfx": [
+            "river_flow",
+            "hoofbeats"
+          ],
+          "visual_beat": "popup: a paper Tikrit fortress above the Tigris; small rider silhouettes pass below"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "كُرْدِيَّةٍ؟ إِذَنْ لَمْ يَكُنْ عَرَبِيًّا!",
+          "sfx": [],
+          "visual_beat": "library: faris looks surprised"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَ كُرْدِيًّا مُسْلِمًا، وَجَمَعَ حَوْلَهُ الْعَرَبَ وَالْكُرْدَ وَالتُّرْكَ وَغَيْرَهُمْ. وَنَشَأَ فِي بَعْلَبَكَّ وَدِمَشْقَ، ثُمَّ ذَهَبَ مَعَ عَمِّهِ أَسَدِ الدِّينِ شِيرْكُوهَ إِلَى مِصْرَ، وَهُنَاكَ صَارَ وَزِيرًا ثُمَّ سُلْطَانًا.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "map: a gold route runs on a parchment map from Tikrit to Damascus and on to Cairo"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَمَاذَا فَعَلَ حِينَ صَارَ سُلْطَانًا؟",
+          "sfx": [],
+          "visual_beat": "library: faris rests his chin on the desk"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "عَمِلَ عَلَى تَوْحِيدِ مِصْرَ وَالشَّامِ تَحْتَ رَايَةٍ وَاحِدَةٍ، لِأَنَّهُ رَأَى أَنَّ الْفُرْقَةَ تُضْعِفُ الْجَمِيعْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "map: two separate paper regions slide together on the parchment and are stitched with one gold thread"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "حِطِّينُ قُرْبَ بُحَيْرَةِ طَبَرِيَّةَ",
+      "layers": [
+        "sky_dawn",
+        "hills",
+        "lake",
+        "army_silhouettes",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَكَانَتِ الْقُدْسُ تَحْتَ حُكْمِ الصَّلِيبِيِّينَ مُنْذُ نَحْوِ تِسْعِينَ عَامًا. وَكَانَ صَلَاحُ الدِّينِ يَسْتَعِدُّ لِهَذَا الْيَوْمِ سِنِينَ طَوِيلَةً، بِالصَّبْرِ وَجَمْعِ الْكَلِمَةْ.",
+          "sfx": [
+            "wind_soft",
+            "drums_distant"
+          ],
+          "visual_beat": "popup: paper hills above a calm lake at dawn; banners appear one by one along the ridge"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَفِي سَنَةِ أَلْفٍ وَمِئَةٍ وَسَبْعٍ وَثَمَانِينَ، الْتَقَى الْجَيْشَانِ عِنْدَ حِطِّينَ، قُرْبَ بُحَيْرَةِ طَبَرِيَّةَ، فَانْتَصَرَ صَلَاحُ الدِّينِ نَصْرًا كَبِيرًا.",
+          "sfx": [
+            "drums_distant",
+            "hoofbeats"
+          ],
+          "visual_beat": "silhouette: two paper armies stand as black silhouettes on a gold horizon above the lake; banners only, no weapons raised"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "حِطِّينُ! سَمِعْتُ بِهَا فِي دَرْسِ التَّارِيخِ. ثُمَّ ذَهَبَ إِلَى الْقُدْسْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris holds his breath"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، وَبَعْدَ حِصَارٍ وَمُفَاوَضَاتٍ، دَخَلَهَا فِي السَّابِعِ وَالْعِشْرِينَ مِنْ رَجَبٍ، سَنَةَ ثَلَاثٍ وَثَمَانِينَ وَخَمْسِمِئَةٍ لِلْهِجْرَةْ.",
+          "sfx": [
+            "gate_open"
+          ],
+          "visual_beat": "silhouette: symbolic paper walls of Jerusalem with a gate that opens slowly at sunrise; no fighting shown"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "الْقُدْسُ",
+      "layers": [
+        "sky_day",
+        "city_jerusalem",
+        "walls",
+        "gate",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَمَاذَا فَعَلَ بِأَهْلِهَا؟",
+          "sfx": [],
+          "visual_beat": "library: faris looks worried"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "لَمْ يَنْتَقِمْ. أَمَّنَ النَّاسَ عَلَى أَرْوَاحِهِمْ، وَسَمَحَ لَهُمْ بِالْخُرُوجِ مَعَ أَمْوَالِهِمْ مُقَابِلَ فِدْيَةٍ مَعْلُومَةٍ. وَتَذْكُرُ الْمَصَادِرُ أَنَّهُ أَطْلَقَ كَثِيرًا مِنَ الْفُقَرَاءِ الَّذِينَ عَجَزُوا عَنِ الدَّفْعِ، مِنْ غَيْرِ فِدْيَةْ.",
+          "sfx": [
+            "crowd_murmur",
+            "footsteps"
+          ],
+          "visual_beat": "popup: paper travelers carrying bundles walk out through the open gate on a calm road; the Dome of the Rock shines in gold"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "رَحِيمٌ حَتَّى مَعَ مَنْ كَانُوا يُقَاتِلُونَهُ!",
+          "sfx": [],
+          "visual_beat": "library: faris shakes his head in wonder"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، وَلِهَذَا احْتَرَمَهُ خُصُومُهُ، وَكَتَبَ عَنْ رَحْمَتِهِ حَتَّى مُؤَرِّخُوهُمْ.",
+          "sfx": [],
+          "visual_beat": "popup: a paper chronicle in another script unrolls and one line of praise is underlined in gold"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَبَعْدَ سَنَوَاتٍ مِنَ الْقِتَالِ، عَقَدَ مَعَ خُصُومِهِ صُلْحَ الرَّمْلَةِ، فَحَلَّ السَّلَامُ وَسُمِحَ لِلزُّوَّارِ بِالْوُصُولِ إِلَى الْقُدْسْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "popup: two paper banners lower together and a quiet road of travelers leads to the city gate"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَحِينَ تُوُفِّيَ فِي دِمَشْقَ سَنَةَ أَلْفٍ وَمِئَةٍ وَثَلَاثٍ وَتِسْعِينَ، لَمْ يَتْرُكْ مِنَ الْمَالِ إِلَّا الْقَلِيلَ، لِأَنَّهُ أَنْفَقَ مَالَهُ عَلَى النَّاسْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: a nearly empty paper purse rests beside a single gold coin on a plain wooden table"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "إِذَنْ، الْقُوَّةُ الْحَقِيقِيَّةُ لَيْسَتْ فِي الِانْتِصَارِ فَقَطْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris sits up, thinking hard"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "صَدَقْتَ يَا فَارِسُ. الْقُوَّةُ الْحَقِيقِيَّةُ أَنْ تَبْقَى عَادِلًا رَحِيمًا حِينَ تَسْتَطِيعُ أَنْ تَفْعَلَ مَا تَشَاءْ. وَهَذَا مَا جَعَلَ اسْمَهُ يَبْقَى جَمِيلًا بَعْدَ أَكْثَرَ مِنْ ثَمَانِيَةِ قُرُونْ.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: a gold balance scale settles level inside an illuminated frame, an olive branch resting on it"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "إِذَنْ، الرَّحْمَةُ قُوَّةٌ أَيْضًا!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "فَالْعَفْوُ عِنْدَ الْمَقْدِرَةِ مِنْ أَخْلَاقِ الْأَبْطَالْ.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa closes the book; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، مَتَى سَامَحْتُمْ أَحَدًا وَأَنْتُمْ قَادِرُونَ عَلَى الرَّدِّ؟ احْكُوا لَنَا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer beside the lamp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "id": "ep03",
+  "number": 3,
+  "title": "الْإِمَامُ الْبُخَارِيُّ",
+  "hero": {
+    "name": "محمد بن إسماعيل البخاري",
+    "era": "194–256 هـ / 810–870 م",
+    "place": "بخارى · الحجاز · العراق · الشام · مصر"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "ابن حجر العسقلاني، هدي الساري مقدمة فتح الباري",
+    "الخطيب البغدادي، تاريخ بغداد: ترجمة محمد بن إسماعيل البخاري",
+    "Encyclopaedia Britannica: al-Bukhārī"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "كَيْفَ تَتَأَكَّدُ أَنَّ الْخَبَرَ الَّذِي وَصَلَكَ صَحِيحْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: a paper message slip unfolds into a gold question mark over the dark shelves"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، أَحْيَانًا يُرْسِلُ لِي أَصْدِقَائِي أَخْبَارًا عَجِيبَةً، وَلَا أَعْرِفُ هَلْ هِيَ صَحِيحَةْ.",
+          "sfx": [
+            "footsteps"
+          ],
+          "visual_beat": "library: faris walks in holding up his phone, puzzled"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "سُؤَالٌ ذَكِيٌّ يَا فَارِسُ، وَجَوَابُهُ عِنْدَ رَجُلٍ قَضَى عُمُرَهُ فِي التَّحَقُّقِ مِنَ الْأَخْبَارْ. اجْلِسْ بِجَانِبِي، وَانْظُرْ إِلَى هَذِهِ الصَّفْحَةِ الَّتِي تَنْفَتِحُ عَلَى مَدِينَةٍ بَعِيدَةْ.",
+          "sfx": [
+            "footsteps",
+            "candle_flicker"
+          ],
+          "visual_beat": "library: grandpa makes room for faris on the bench beside the desk"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَنْ هُوَ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris slides closer to the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "الْإِمَامُ مُحَمَّدُ بْنُ إِسْمَاعِيلَ الْبُخَارِيُّ، صَاحِبُ أَشْهَرِ كُتُبِ الْحَدِيثِ النَّبَوِيّْ.",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: the book opens and a paper Bukhara of blue-green domes rises from the page"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "بُخَارَى",
+      "layers": [
+        "sky_dawn",
+        "city_bukhara",
+        "boy_silhouette",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وُلِدَ فِي مَدِينَةِ بُخَارَى سَنَةَ أَرْبَعٍ وَتِسْعِينَ وَمِئَةٍ لِلْهِجْرَةِ، وَنَشَأَ يَتِيمًا بَعْدَ وَفَاةِ أَبِيهِ وَهُوَ صَغِيرْ.",
+          "sfx": [
+            "wind_soft"
+          ],
+          "visual_beat": "popup: a small boy silhouette walks through the paper streets of Bukhara at dawn"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَحَبَّ الْعِلْمَ مُنْذُ طُفُولَتِهِ، وَكَانَ قَوِيَّ الذَّاكِرَةِ، يَحْفَظُ مَا يَسْمَعُهُ بِسُرْعَةٍ عَجِيبَةْ. وَحَفِظَ الْقُرْآنَ الْكَرِيمَ وَهُوَ صَغِيرٌ، ثُمَّ بَدَأَ يَحْضُرُ مَجَالِسَ الْعُلَمَاءِ فِي بَلَدِهْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "popup: the boy silhouette sits in a circle of scholar silhouettes under a paper arch, a lamp between them"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مِثْلِي حِينَ أَحْفَظُ أَسْمَاءَ اللَّاعِبِينَ!",
+          "sfx": [],
+          "visual_beat": "library: faris grins proudly"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "بَلْ أَكْثَرُ بِكَثِيرٍ يَا فَارِسْ.",
+          "sfx": [],
+          "visual_beat": "library: grandpa smiles and raises an eyebrow"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "طُرُقُ الْقَوَافِلِ",
+      "layers": [
+        "sky_day",
+        "dunes",
+        "caravan",
+        "map_parchment",
+        "route_line",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "سَافَرَ الْبُخَارِيُّ إِلَى مَكَّةَ وَالْمَدِينَةِ وَالْعِرَاقِ وَالشَّامِ وَمِصْرَ، يَلْتَقِي بِالْعُلَمَاءِ وَيَسْمَعُ مِنْهُمُ الْأَحَادِيثْ. وَكَانَتِ الرِّحْلَةُ آنَذَاكَ تَسْتَغْرِقُ أَسَابِيعَ وَشُهُورًا عَلَى ظُهُورِ الْإِبِلِ، فِي الْحَرِّ وَالْبَرْدْ.",
+          "sfx": [
+            "camel_bells",
+            "desert_wind"
+          ],
+          "visual_beat": "map: a gold dotted route crosses a parchment map from Bukhara to Mecca, Iraq, Sham and Egypt as a paper caravan walks along it"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "كُلُّ هَذَا التَّعَبِ مِنْ أَجْلِ حَدِيثٍ وَاحِدٍ؟",
+          "sfx": [],
+          "visual_beat": "library: faris counts the cities on the map with his finger"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَحْيَانًا نَعَمْ، فَالْكَلِمَةُ الصَّادِقَةُ تَسْتَحِقُّ الرِّحْلَةْ. وَكَانَ لَا يَقْبَلُ الْحَدِيثَ حَتَّى يَعْرِفَ مَنْ رَوَاهُ، وَعَمَّنْ أَخَذَهُ، وَهَلِ الرُّوَاةُ صَادِقُونَ دَقِيقُونَ فِي حِفْظِهِمْ.",
+          "sfx": [
+            "quill_scratch"
+          ],
+          "visual_beat": "object: a chain of gold rings forms link by link across a manuscript page, each ring bearing a name"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "يَعْنِي يَفْحَصُ السِّلْسِلَةَ كُلَّهَا؟",
+          "sfx": [],
+          "visual_beat": "library: faris traces the chain of rings"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، حَلْقَةً حَلْقَةً، وَكَانَ يَشْتَرِطُ أَنْ يَكُونَ كُلُّ رَاوٍ قَدْ لَقِيَ مَنْ رَوَى عَنْهْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: each ring of the chain lights in gold only when it touches the next ring"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَإِذَا انْقَطَعَتْ حَلْقَةٌ وَاحِدَةٌ؟",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "لَمْ يَضَعِ الْحَدِيثَ فِي كِتَابِهِ الصَّحِيحِ، مَهْمَا كَانَ مَشْهُورًا بَيْنَ النَّاسْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "object: one ring of the paper chain goes grey and the whole chain is set aside"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "الْجَامِعُ الصَّحِيحُ",
+      "layers": [
+        "manuscript_page",
+        "isnad_chain",
+        "scholar_silhouette",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَعَمِلَ عَلَى كِتَابِهِ الْجَامِعِ الصَّحِيحِ نَحْوَ سِتَّ عَشْرَةَ سَنَةً، وَاخْتَارَ أَحَادِيثَهُ بِعِنَايَةٍ شَدِيدَةٍ مِنْ بَيْنِ عَدَدٍ كَبِيرٍ جِدًّا مِمَّا سَمِعَهْ. وَقَسَّمَهُ إِلَى كُتُبٍ وَأَبْوَابٍ، لِيَسْهُلَ عَلَى الْقَارِئِ أَنْ يَجِدَ مَا يَبْحَثُ عَنْهْ.",
+          "sfx": [
+            "quill_scratch",
+            "page_turn"
+          ],
+          "visual_beat": "popup: a scholar silhouette writes by lamplight as bound volumes stack up into a gold-edged book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "حَتَّى صَارَ كِتَابُهُ عِنْدَ جُمْهُورِ الْعُلَمَاءِ أَصَحَّ كِتَابٍ بَعْدَ الْقُرْآنِ الْكَرِيمْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: the finished book rests on a carved stand inside an illuminated border"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَهَلْ مَا زَالَ النَّاسُ يَقْرَؤُونَهُ؟",
+          "sfx": [],
+          "visual_beat": "library: faris looks at the shelves around him"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، يُقْرَأُ فِي الْمَسَاجِدِ وَالْجَامِعَاتِ فِي كُلِّ مَكَانٍ، بَعْدَ أَكْثَرَ مِنْ أَلْفٍ وَمِئَةِ عَامْ. وَتُوُفِّيَ الْبُخَارِيُّ سَنَةَ سِتٍّ وَخَمْسِينَ وَمِئَتَيْنِ لِلْهِجْرَةِ، قُرْبَ سَمَرْقَنْدْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "map: small gold lamps light up across a parchment world map, one for every city where the book is read"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "إِذَنْ، الدَّرْسُ أَنْ أَتَأَكَّدَ قَبْلَ أَنْ أُصَدِّقْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris holds up his phone thoughtfully"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَقَبْلَ أَنْ تَنْقُلَ الْخَبَرَ لِغَيْرِكَ يَا فَارِسُ. فِي زَمَنِ الرَّسَائِلِ السَّرِيعَةِ، نَحْتَاجُ إِلَى دِقَّةِ الْبُخَارِيِّ أَكْثَرَ مِنْ أَيِّ وَقْتْ. اسْأَلْ دَائِمًا: مَنْ قَالَ هَذَا؟ وَمِنْ أَيْنَ عَرَفَهْ؟ فَالْكَلِمَةُ أَمَانَةٌ، وَمَنْ نَقَلَهَا صَارَ مَسْؤُولًا عَنْهَا.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: a paper message passes through a gold magnifying lens inside an illuminated frame before it is sent"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَحْسَنْتَ يَا فَارِسُ، سُؤَالُكَ الْيَوْمَ كَانَ بِدَايَةَ رِحْلَةٍ جَمِيلَةْ.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa closes the book; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ، كَيْفَ تَتَأَكَّدُونَ مِنَ الْأَخْبَارِ الَّتِي تَصِلُكُمْ؟ اُكْتُبُوا طَرِيقَتَكُمْ فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer beside the lamp"
+        }
+      ]
+    }
+  ]
+}

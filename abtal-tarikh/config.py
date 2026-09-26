@@ -7,11 +7,15 @@ PYPKG = ROOT / '.pypackages'
 if PYPKG.is_dir() and str(PYPKG) not in sys.path:
     sys.path.insert(0, str(PYPKG))
 
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 
 SERIES = {
     'title': 'أبطال في التاريخ',
     'episodes': 10,
+    # الإطار الثابت: فارس وجدّه في مكتبة قديمة؛ لا يتكلّم أيّ شخص تاريخي
+    'cast': {'faris': 'فَارِسٌ — الْحَفِيدُ', 'grandpa': 'الْجَدُّ'},
+    # بنية كل حلقة: سؤال خطّاف → إطار → قصة → درس واحد → سؤال ختامي للتعليقات
+    'parts': ('hook', 'frame', 'story', 'lesson', 'closing'),
 }
 
 VIDEO = {
@@ -28,9 +32,43 @@ VIDEO = {
 
 # تقدير المدة قبل توليد الصوت، وحدّ التشكيل الأدنى لكل حرف
 SPEECH = {
-    'wps_estimate': 2.0,
+    'wps_estimate': 2.3,
     'scene_gap_s': 1.2,
-    'min_diacritic_ratio': 0.5,
+    'words': (300, 380),
+    'hook_max_words': 9,
+}
+
+# مفردات الإشارات المسموحة في النصوص؛ مرحلتا المؤثرات والمشاهد تنفّذانها
+CUES = {
+    'shots': ('hook', 'library', 'popup', 'map', 'silhouette', 'object', 'lesson', 'closing'),
+    'sfx': (
+        'stinger_hook', 'book_open', 'book_close', 'page_turn', 'paper_unfold', 'whoosh_page',
+        'candle_flicker', 'quill_scratch', 'chime_soft', 'chime_lesson', 'footsteps',
+        'wind_soft', 'desert_wind', 'waves', 'seagulls', 'river_flow', 'birds_morning', 'night_crickets',
+        'sail_flap', 'ship_creak', 'rope_pull', 'drums_distant', 'hoofbeats', 'camel_bells',
+        'market_bustle', 'crowd_murmur', 'gate_open', 'stone_blocks', 'hammer_anvil',
+        'metal_tools', 'glass_clink', 'mortar_pestle', 'fire_crackle',
+    ),
+    'layers': (
+        'library_shelves', 'library_window', 'lamp', 'desk', 'open_book', 'popup_frame',
+        'sky_dawn', 'sky_day', 'sky_dusk', 'sky_night', 'stars', 'sun',
+        'sea', 'strait_cliffs', 'ships', 'rails', 'hills', 'mountains', 'green_mountains', 'dunes', 'palms',
+        'river', 'lake', 'olive_trees', 'walls', 'fortress', 'gate', 'caravan', 'riders', 'army_silhouettes',
+        'city_baghdad', 'city_cordoba', 'city_basra', 'city_cairo', 'city_bukhara', 'city_damascus',
+        'city_jerusalem', 'city_constantinople', 'city_tangier', 'city_fes',
+        'scholar_silhouette', 'scribe_silhouette', 'boy_silhouette', 'instruments', 'eye_diagram',
+        'light_ray', 'number_tiles', 'map_parchment', 'route_line', 'isnad_chain', 'manuscript_page',
+    ),
+}
+
+# الحدود الشرعية للمشاهد: المعارك ظلالٌ رمزية فقط، لا دماء، لا نساء، لا سحر
+RULES = {
+    'banned_visual': ('blood', 'wound', 'kill', 'corpse', 'dead body', 'woman', 'women', 'girl', 'wife',
+                      'mother', 'sister', 'queen', 'princess', 'magic', 'spell', 'wizard', 'witch',
+                      'sorcer', 'enchant', 'genie', 'glowing rune'),
+    'battle_terms': ('army', 'armies', 'battle', 'siege', 'combat', 'troops', 'cannon', 'war '),
+    'battle_shot': 'silhouette',
+    'min_sources': 2,
 }
 
 AUDIO = {

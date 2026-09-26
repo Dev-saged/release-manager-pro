@@ -1,0 +1,313 @@
+{
+  "id": "ep05",
+  "number": 5,
+  "title": "ابْنُ الْهَيْثَمِ",
+  "hero": {
+    "name": "الحسن بن الهيثم",
+    "era": "نحو 965–1040 م",
+    "place": "البصرة · القاهرة"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "ابن الهيثم، كتاب المناظر",
+    "ابن القفطي، إخبار العلماء بأخبار الحكماء: ترجمة ابن الهيثم",
+    "UNESCO, International Year of Light 2015 and the 1000th anniversary of Ibn al-Haytham's Book of Optics",
+    "Encyclopaedia Britannica: Ibn al-Haytham"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "هَلْ تَخْرُجُ أَشِعَّةٌ مِنْ عَيْنَيْكَ لِتَرَى الْأَشْيَاءْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: two paper eyes open in the dark and a gold question mark hangs between them"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْمُظْلِمَةُ وَثُقْبٌ فِي السِّتَارَةِ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "desk",
+        "light_ray"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، لِمَاذَا تُطْفِئُ الْمِصْبَاحَ وَتَفْتَحُ ثُقْبًا صَغِيرًا فِي السِّتَارَةْ؟",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "library: grandpa dims the lamp and pins a tiny hole in the window curtain"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "انْظُرْ إِلَى الْجِدَارِ يَا فَارِسُ، مَاذَا تَرَى؟",
+          "sfx": [],
+          "visual_beat": "library: a thin gold beam crosses the dark room to the wall"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "صُورَةَ الشَّارِعِ... لَكِنَّهَا مَقْلُوبَةْ!",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: an upside-down paper street with palm trees and passing carts appears on the wall"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "كَيْفَ دَخَلَ الشَّارِعُ كُلُّهُ مِنْ هَذَا الثُّقْبِ الصَّغِيرِ؟",
+          "sfx": [],
+          "visual_beat": "library: faris puts his eye near the pinhole"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "الضَّوْءُ يَسِيرُ فِي خُطُوطٍ مُسْتَقِيمَةٍ، فَيَعْبُرُ الثُّقْبَ وَيَرْسُمُ الصُّورَةَ مَقْلُوبَةً عَلَى الْجِدَارْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: straight gold lines cross through the pinhole and flip the paper street upside down"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "هَذِهِ التَّجْرِبَةُ دَرَسَهَا عَالِمٌ عَظِيمٌ قَبْلَ نَحْوِ أَلْفِ سَنَةٍ، اسْمُهُ الْحَسَنُ بْنُ الْهَيْثَمْ.",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: grandpa relights the lamp and opens the book; a paper Basra of palm groves rises"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "الْبَصْرَةُ ثُمَّ الْقَاهِرَةُ",
+      "layers": [
+        "sky_day",
+        "city_basra",
+        "palms",
+        "river",
+        "city_cairo",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وُلِدَ ابْنُ الْهَيْثَمِ فِي الْبَصْرَةِ بِالْعِرَاقِ، نَحْوَ سَنَةِ تِسْعِمِئَةٍ وَخَمْسٍ وَسِتِّينَ لِلْمِيلَادِ، ثُمَّ انْتَقَلَ إِلَى الْقَاهِرَةِ فِي مِصْرْ.",
+          "sfx": [
+            "river_flow"
+          ],
+          "visual_beat": "map: a gold line runs across a parchment map from Basra to Cairo"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَتَرْوِي كُتُبُ التَّرَاجِمِ أَنَّهُ فَكَّرَ فِي مَشْرُوعٍ لِتَنْظِيمِ مِيَاهِ النِّيلِ، ثُمَّ ذَهَبَ لِيَدْرُسَ الْمَكَانَ بِنَفْسِهِ، فَوَجَدَ أَنَّ الْأَمْرَ أَصْعَبُ مِمَّا ظَنّْ.",
+          "sfx": [
+            "river_flow",
+            "wind_soft"
+          ],
+          "visual_beat": "popup: a scholar silhouette stands on paper rocks beside the wide river Nile, measuring with a rod"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَهَلِ اعْتَرَفَ بِذَلِكَ؟",
+          "sfx": [],
+          "visual_beat": "library: faris tilts his head"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، فَالْعَالِمُ الصَّادِقُ يُغَيِّرُ رَأْيَهُ حِينَ تُخَالِفُهُ الْحَقَائِقْ. وَفِي زَمَانِهِ، كَانَ كَثِيرٌ مِنَ الْعُلَمَاءِ يَظُنُّونَ أَنَّ الْعَيْنَ تُرْسِلُ أَشِعَّةً إِلَى الْأَشْيَاءِ فَتَرَاهَا.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "object: dotted paper rays shoot out from a paper eye toward a vase, then a gold cross marks the diagram as doubtful"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَهَلْ صَدَّقَهُمْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris narrows his eyes"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "لَمْ يَكْتَفِ بِالتَّصْدِيقِ، بَلْ جَرَّبَ بِنَفْسِهْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "popup: the scholar silhouette sets a lamp, a screen and a mirror on a paper table"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "غُرْفَةُ التَّجَارِبِ",
+      "layers": [
+        "light_ray",
+        "eye_diagram",
+        "instruments",
+        "manuscript_page",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "دَرَسَ الضَّوْءَ فِي غُرَفٍ مُظْلِمَةٍ، وَرَاقَبَ كَيْفَ يَدْخُلُ مِنْ ثُقْبٍ صَغِيرٍ، وَكَيْفَ يَنْعَكِسُ عَلَى الْمَرَايَا، وَكَيْفَ يَنْكَسِرُ فِي الْمَاءِ وَالزُّجَاجْ.",
+          "sfx": [
+            "glass_clink"
+          ],
+          "visual_beat": "object: a gold beam enters through a pinhole, bounces off a paper mirror and bends inside a glass of water"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَصَنَعَ غُرْفَةً مُظْلِمَةً فِيهَا ثُقْبٌ صَغِيرٌ، فَظَهَرَتْ صُورَةُ مَا فِي الْخَارِجِ مَقْلُوبَةً عَلَى الْجِدَارِ، تَمَامًا كَمَا رَأَيْتَ الْآنْ. وَأَثْبَتَ بِالتَّجْرِبَةِ أَنَّ الضَّوْءَ يَأْتِي مِنَ الْأَشْيَاءِ إِلَى الْعَيْنِ، لَا مِنَ الْعَيْنِ إِلَى الْأَشْيَاءْ.",
+          "sfx": [
+            "page_turn",
+            "chime_soft"
+          ],
+          "visual_beat": "object: the rays reverse direction, flowing from the vase into the paper eye, drawn in gold"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "إِذَنْ، أَنَا أَرَى الْكِتَابَ لِأَنَّ ضَوْءَ الْمِصْبَاحِ يَرْتَدُّ مِنْهُ إِلَى عَيْنِي!",
+          "sfx": [],
+          "visual_beat": "library: faris looks from the lamp to the book to his own eye, delighted"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَحْسَنْتَ! هَذَا بِالضَّبْطِ مَا شَرَحَهُ فِي كِتَابِهِ الشَّهِيرِ: كِتَابِ الْمَنَاظِرْ.",
+          "sfx": [
+            "paper_unfold"
+          ],
+          "visual_beat": "object: a manuscript page opens to a gold drawing of the eye with its layers labelled"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "مِنَ الْقَاهِرَةِ إِلَى الْعَالَمِ",
+      "layers": [
+        "map_parchment",
+        "route_line",
+        "manuscript_page",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَكَانَ مِنْ أَوَائِلِ الْعُلَمَاءِ الَّذِينَ جَعَلُوا التَّجْرِبَةَ وَالْقِيَاسَ طَرِيقًا لِلتَّأَكُّدِ مِنْ صِحَّةِ الْأَفْكَارِ، قَبْلَ قَبُولِهَا. وَتُرْجِمَ كِتَابُهُ إِلَى اللَّاتِينِيَّةِ، فَأَثَّرَ فِي عُلَمَاءِ الْبَصَرِيَّاتِ فِي أُورُوبَّا قُرُونًا طَوِيلَةْ.",
+          "sfx": [
+            "paper_unfold"
+          ],
+          "visual_beat": "map: copies of the book travel along a gold route from Cairo to European cities on a parchment map"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "حَتَّى عُلَمَاءُ أُورُوبَّا؟",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، وَاعْتَمَدُوا عَلَيْهِ فِي دِرَاسَةِ الْعَدَسَاتِ وَالْعَيْنِ وَالْمَرَايَا.",
+          "sfx": [
+            "glass_clink"
+          ],
+          "visual_beat": "object: a paper lens, an eye diagram and a mirror line up beside the translated book"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَهَلْ مَا زَالَ النَّاسُ يَذْكُرُونَهُ؟",
+          "sfx": [],
+          "visual_beat": "library: faris hugs his knees, listening"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، فَفِي سَنَةِ أَلْفَيْنِ وَخَمْسَ عَشْرَةَ، احْتَفَى الْعَالَمُ بِمُرُورِ أَلْفِ عَامٍ عَلَى أَعْمَالِهِ فِي الضَّوْءِ، ضِمْنَ السَّنَةِ الدَّوْلِيَّةِ لِلضَّوْءْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "popup: a paper globe turns slowly as a thin gold ring of light circles it"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَا الدَّرْسُ الَّذِي تُرِيدُنِي أَنْ أَتَذَكَّرَهُ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris sits up straight"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "لَا تَقْبَلِ الْفِكْرَةَ لِأَنَّ كَثِيرِينَ يُرَدِّدُونَهَا؛ جَرِّبْ، وَلَاحِظْ، وَقِسْ، ثُمَّ احْكُمْ. فَالْعَالِمُ الْحَقِيقِيُّ يَبْحَثُ عَنِ الْحَقِيقَةِ، حَتَّى لَوْ خَالَفَتْ مَا تَعَوَّدَ عَلَيْهِ النَّاسْ.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: four gold icons — a flask, an eye, a ruler and a scale — light in turn inside an illuminated frame"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كُلُّ عَالِمٍ كَبِيرٍ بَدَأَ بِسُؤَالٍ صَغِيرٍ وَتَجْرِبَةٍ بَسِيطَةْ.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa closes the book; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، مَا الْفِكْرَةُ الَّتِي تُرِيدُونَ أَنْ تَخْتَبِرُوهَا بِتَجْرِبَةٍ بِأَنْفُسِكُمْ؟ اُكْتُبُوهَا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer, holding the pinhole curtain open"
+        }
+      ]
+    }
+  ]
+}

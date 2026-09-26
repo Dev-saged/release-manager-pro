@@ -1,0 +1,293 @@
+{
+  "id": "ep10",
+  "number": 10,
+  "title": "عُمَرُ الْمُخْتَارُ",
+  "hero": {
+    "name": "عمر المختار",
+    "era": "نحو 1858–1931 م",
+    "place": "برقة · الجبل الأخضر · ليبيا"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "Ali Abdullatif Ahmida, The Making of Modern Libya (SUNY Press)",
+    "E. E. Evans-Pritchard, The Sanusi of Cyrenaica (Oxford)",
+    "Encyclopaedia Britannica: Omar Mukhtar"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "هَلْ يُمْكِنُ لِمُعَلِّمِ قُرْآنٍ أَنْ يَصِيرَ أَسَدَ الصَّحْرَاءْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: a small paper lamp and a paper desert ridge form a gold question mark in the dark"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، هَذِهِ الصَّفْحَةُ تَبْدُو أَحْدَثَ مِنَ الْبَاقِي!",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "library: faris turns to the last pages of the book, which look newer"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "هَذِهِ آخِرُ صَفْحَةٍ فِي كِتَابِنَا يَا فَارِسُ، وَبَطَلُهَا عَاشَ قَرِيبًا مِنْ زَمَانِنَا.",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "library: grandpa rests his hand gently on the page"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَنْ هُوَ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris looks up at grandpa"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "إِنَّهُ عُمَرُ الْمُخْتَارُ، شَيْخٌ مِنْ لِيبْيَا، لَقَّبَهُ النَّاسُ بِأَسَدِ الصَّحْرَاءْ.",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: paper green mountains and olive trees rise from the page under a lapis sky"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "بَرْقَةُ وَالزَّوَايَا السَّنُوسِيَّةُ",
+      "layers": [
+        "sky_day",
+        "green_mountains",
+        "olive_trees",
+        "scholar_silhouette",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وُلِدَ فِي مِنْطَقَةِ بَرْقَةَ شَرْقَ لِيبْيَا، نَحْوَ سَنَةِ أَلْفٍ وَثَمَانِمِئَةٍ وَثَمَانٍ وَخَمْسِينَ لِلْمِيلَادِ، وَنَشَأَ يَتِيمًا.",
+          "sfx": [
+            "wind_soft",
+            "birds_morning"
+          ],
+          "visual_beat": "popup: a paper village in the green hills of Barqa at dawn"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "دَرَسَ فِي زَوَايَا الْحَرَكَةِ السَّنُوسِيَّةِ، وَحَفِظَ الْقُرْآنَ، ثُمَّ صَارَ مُعَلِّمًا لَهُ، يُعَلِّمُ الصِّغَارَ وَيُصْلِحُ بَيْنَ النَّاسْ. وَكَانَ مَعْرُوفًا بِالْحِكْمَةِ وَحُسْنِ الْخُلُقِ، فَأَحَبَّهُ النَّاسُ وَوَثِقُوا بِهْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "popup: a teacher silhouette sits with boy silhouettes holding wooden boards under an olive tree"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مُعَلِّمٌ؟ وَكَيْفَ صَارَ قَائِدًا؟",
+          "sfx": [],
+          "visual_beat": "library: faris frowns, curious"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "فِي سَنَةِ أَلْفٍ وَتِسْعِمِئَةٍ وَإِحْدَى عَشْرَةَ، احْتَلَّتْ إِيطَالْيَا لِيبْيَا، فَهَبَّ أَهْلُهَا لِلدِّفَاعِ عَنْ أَرْضِهِمْ، وَكَانَ عُمَرُ الْمُخْتَارُ فِي مُقَدِّمَتِهِمْ، وَهُوَ فِي الْخَمْسِينَ مِنْ عُمُرِهِ تَقْرِيبًا.",
+          "sfx": [
+            "drums_distant",
+            "waves"
+          ],
+          "visual_beat": "map: a parchment map of Libya's coast; dark paper ships approach from the sea"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "فِي الْخَمْسِينَ؟ مِثْلَ عُمُرِ أَبِي تَقْرِيبًا!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "الْجَبَلُ الْأَخْضَرُ",
+      "layers": [
+        "sky_dusk",
+        "green_mountains",
+        "riders",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "قَادَ الْمُقَاوَمَةَ فِي جِبَالِ الْجَبَلِ الْأَخْضَرِ نَحْوَ عِشْرِينَ عَامًا، مَعَ رِجَالٍ قَلِيلِي الْعَدَدِ وَالسِّلَاحِ، أَمَامَ جَيْشٍ حَدِيثٍ كَبِيرْ.",
+          "sfx": [
+            "hoofbeats",
+            "wind_soft"
+          ],
+          "visual_beat": "silhouette: symbolic horse riders as black paper silhouettes crossing green ridges under a lapis sky; no combat shown"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَكَيْفَ صَمَدُوا كُلَّ هَذِهِ السِّنِينَ؟ حَتَّى وَهُوَ شَيْخٌ كَبِيرٌ؟",
+          "sfx": [],
+          "visual_beat": "library: faris counts twenty years on his fingers"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانُوا يَعْرِفُونَ الْجِبَالَ وَالْوِدْيَانَ جَيِّدًا، وَكَانَ يُشَارِكُهُمُ التَّعَبَ وَالْجُوعَ، وَهُوَ شَيْخٌ تَجَاوَزَ السَّبْعِينْ. وَكَانَ يُعَامِلُ الْأَسْرَى مُعَامَلَةً حَسَنَةً، الْتِزَامًا بِأَخْلَاقِ دِينِهْ.",
+          "sfx": [
+            "night_crickets",
+            "fire_crackle"
+          ],
+          "visual_beat": "popup: an old man silhouette shares bread with riders around a small campfire in a mountain valley at night"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "حَتَّى مَعَ الْأَسْرَى! هَذِهِ أَخْلَاقُ الْفُرْسَانِ الْحَقِيقِيِّينْ.",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "ذِكْرَى لَا تَغِيبُ",
+      "layers": [
+        "sky_dawn",
+        "green_mountains",
+        "olive_trees",
+        "sun",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَفِي سَنَةِ أَلْفٍ وَتِسْعِمِئَةٍ وَإِحْدَى وَثَلَاثِينَ، أُسِرَ بَعْدَ مَعْرَكَةٍ، ثُمَّ حُوكِمَ مُحَاكَمَةً سَرِيعَةً، وَأَعْدَمَهُ الْمُحْتَلُّونَ وَهُوَ فِي نَحْوِ الثَّالِثَةِ وَالسَّبْعِينَ مِنْ عُمُرِهِ، رَحِمَهُ اللَّهُ.",
+          "sfx": [
+            "wind_soft"
+          ],
+          "visual_beat": "object: the teacher's small lamp stands alone on a stone ledge as dusk falls over the hills"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "لَقَدْ حَزِنْتُ عَلَيْهِ يَا جَدِّي.",
+          "sfx": [],
+          "visual_beat": "library: faris lowers his eyes"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَأَنَا كَذَلِكَ، لَكِنَّ ذِكْرَاهُ بَقِيَتْ حَيَّةً. فَقَدْ نَالَتْ لِيبْيَا اسْتِقْلَالَهَا بَعْدَ عِشْرِينَ عَامًا، سَنَةَ أَلْفٍ وَتِسْعِمِئَةٍ وَإِحْدَى وَخَمْسِينَ. وَصَارَتْ صُورَتُهُ رَمْزًا لِلصَّبْرِ وَالثَّبَاتِ فِي الْعَالَمِ كُلِّهْ. وَمَا زَالَتِ الْأَجْيَالُ تَذْكُرُهُ مُعَلِّمًا صَبُورًا قَبْلَ أَنْ يَكُونَ قَائِدًا.",
+          "sfx": [
+            "birds_morning",
+            "chime_soft"
+          ],
+          "visual_beat": "popup: the sun rises in gold over the green hills and a paper olive tree grows beside the still-lit lamp"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَا الدَّرْسُ الْأَخِيرُ فِي هَذَا الْكِتَابِ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris wipes his eyes and looks at grandpa"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَنَّ الثَّبَاتَ عَلَى الْحَقِّ لَا يَعْرِفُ عُمُرًا يَا فَارِسُ. عُمَرُ الْمُخْتَارُ بَقِيَ مُعَلِّمًا وَصَابِرًا حَتَّى آخِرِ يَوْمٍ فِي حَيَاتِهْ. وَالْبَطَلُ الْحَقِيقِيُّ هُوَ مَنْ يَثْبُتُ عَلَى مَبَادِئِهِ، حَتَّى حِينَ يَكُونُ الطَّرِيقُ صَعْبًا.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: an olive tree stands firm in the wind inside an illuminated frame, its roots drawn in gold"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "إِذَنْ، الْعُمُرُ لَيْسَ عُذْرًا لِلتَّوَقُّفِ.",
+          "sfx": [],
+          "visual_beat": "library: faris nods slowly"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، هَلْ يُمْكِنُ أَنْ أَكُونَ أَنَا بَطَلًا فِي هَذَا الْكِتَابِ يَوْمًا مَا؟",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "library: faris turns past the last story to a row of blank pages"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "الصَّفَحَاتُ الْبَيْضَاءُ فِي آخِرِهِ تَنْتَظِرُكَ يَا فَارِسُ، وَتَنْتَظِرُ كُلَّ مَنْ يُشَاهِدُنَا الْآنْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "library: grandpa smiles as the blank pages catch the lamp light in gold"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، أَيُّ أَبْطَالِ هَذَا الْكِتَابِ أَحْبَبْتُمْ أَكْثَرَ؟ وَلِمَاذَا؟ اُكْتُبُوا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "book_close",
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer and holds the book open to the blank pages"
+        }
+      ]
+    }
+  ]
+}

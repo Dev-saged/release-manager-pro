@@ -1,0 +1,303 @@
+{
+  "id": "ep02",
+  "number": 2,
+  "title": "الْخُوَارِزْمِيُّ",
+  "hero": {
+    "name": "محمد بن موسى الخوارزمي",
+    "era": "نحو 780–850 م",
+    "place": "خوارزم · بغداد"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "الخوارزمي، الكتاب المختصر في حساب الجبر والمقابلة",
+    "Encyclopaedia Britannica: al-Khwārizmī",
+    "MacTutor History of Mathematics: Abu Ja'far Muhammad ibn Musa Al-Khwarizmi"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "هَلْ تَعْلَمُ أَنَّ فِي هَاتِفِكَ اسْمَ عَالِمٍ مُسْلِمْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: gold paper digits spin into a question mark over the dark shelves"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "اجْلِسْ يَا فَارِسُ، فَهَذِهِ الصَّفْحَةُ تَحْكِي حِكَايَةً مِنْ بَغْدَادْ. كُلَّمَا اسْتَخْدَمْتَ هَاتِفَكَ، عَمِلَتْ بِدَاخِلِهِ خُطُوَاتٌ مُرَتَّبَةٌ اسْمُهَا الْخُوَارِزْمِيَّاتْ.",
+          "sfx": [
+            "footsteps",
+            "candle_flicker"
+          ],
+          "visual_beat": "library: grandpa turns the heavy book toward faris under the lamp"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "الْخُوَارِزْمِيَّاتُ؟ اسْمٌ غَرِيبٌ يَا جَدِّي!",
+          "sfx": [],
+          "visual_beat": "library: faris repeats the word slowly, counting its letters on his fingers"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "إِنَّهُ مَأْخُوذٌ مِنِ اسْمِ رَجُلٍ عَاشَ قَبْلَ أَكْثَرَ مِنْ أَلْفٍ وَمِئَةِ سَنَةٍ، تَعَالَ نَقْرَأْ قِصَّتَهْ.",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: the book opens and a paper Baghdad of domes and palm trees pops up along the Tigris"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "بَغْدَادُ وَبَيْتُ الْحِكْمَةِ",
+      "layers": [
+        "sky_day",
+        "city_baghdad",
+        "river",
+        "palms",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "اسْمُهُ مُحَمَّدُ بْنُ مُوسَى الْخُوَارِزْمِيُّ، نِسْبَةً إِلَى خُوَارِزْمَ فِي آسِيَا الْوُسْطَى. وَكَانَتْ بَغْدَادُ يَوْمَئِذٍ مِنْ أَكْبَرِ مُدُنِ الْعَالَمِ وَأَغْنَاهَا بِالْكُتُبْ.",
+          "sfx": [
+            "river_flow",
+            "market_bustle"
+          ],
+          "visual_beat": "map: a parchment map traces a gold line from Khwarazm to Baghdad"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "عَمِلَ فِي بَيْتِ الْحِكْمَةِ، وَهُوَ مَرْكَزٌ لِلْعِلْمِ وَالتَّرْجَمَةِ ازْدَهَرَ فِي عَهْدِ الْخَلِيفَةِ الْمَأْمُونِ، وَفِيهِ كُتُبٌ مُتَرْجَمَةٌ مِنْ لُغَاتٍ كَثِيرَةٍ كَالْيُونَانِيَّةِ وَالْفَارِسِيَّةِ وَالسِّنْسِكْرِيتِيَّةْ.",
+          "sfx": [
+            "quill_scratch",
+            "page_turn"
+          ],
+          "visual_beat": "popup: a paper hall of arches with scholar silhouettes at low desks; scrolls stacked between shelves"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "بَيْتٌ كَامِلٌ لِلْحِكْمَةِ؟ كَأَنَّهُ جَامِعَةٌ كَبِيرَةٌ!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَ مَكْتَبَةً وَمَرْكَزًا لِلْبَحْثِ، يَلْتَقِي فِيهِ الْمُتَرْجِمُونَ وَالْعُلَمَاءُ مِنْ أَدْيَانٍ وَبُلْدَانٍ مُخْتَلِفَةْ.",
+          "sfx": [
+            "quill_scratch"
+          ],
+          "visual_beat": "popup: translator silhouettes of different dress share one long paper desk covered in scrolls"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَمَاذَا كَانَ يَدْرُسُ هُنَاكْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris peers into the paper hall"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "الرِّيَاضِيَّاتِ وَالْفَلَكَ وَالْجُغْرَافِيَا. وَكَتَبَ كِتَابًا مَشْهُورًا عُنْوَانُهُ: الْكِتَابُ الْمُخْتَصَرُ فِي حِسَابِ الْجَبْرِ وَالْمُقَابَلَةْ. وَمِنْ كَلِمَةِ الْجَبْرِ فِي عُنْوَانِهِ، جَاءَتْ كَلِمَةُ أَلْجِبْرَا الَّتِي تَدْرُسُهَا الْمَدَارِسُ فِي الْعَالَمِ كُلِّهْ.",
+          "sfx": [
+            "page_turn",
+            "chime_soft"
+          ],
+          "visual_beat": "object: a manuscript page with the book title in gold; the word al-jabr lifts off as a paper cutout"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "خُطُوَاتُ الْحَلِّ",
+      "layers": [
+        "manuscript_page",
+        "number_tiles",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَمَا عَلَاقَةُ ذَلِكَ بِالْخُوَارِزْمِيَّاتْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris taps the phone in his pocket, then the page"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَ الْخُوَارِزْمِيُّ يَحُلُّ الْمَسَائِلَ خُطْوَةً بَعْدَ خُطْوَةٍ، بِطَرِيقَةٍ مُرَتَّبَةٍ يَسْتَطِيعُ أَيُّ أَحَدٍ أَنْ يَتْبَعَهَا. وَحِينَ تُرْجِمَتْ كُتُبُهُ إِلَى اللَّاتِينِيَّةِ، كُتِبَ اسْمُهُ أَلْغُورِيتْمِي، وَمِنْهُ جَاءَتْ كَلِمَةُ الْخُوَارِزْمِيَّةِ فِي لُغَاتٍ كَثِيرَةْ.",
+          "sfx": [
+            "whoosh_page",
+            "chime_soft"
+          ],
+          "visual_beat": "object: paper number tiles step into a staircase, each step inked in gold as it is reached"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "يَعْنِي أَنَّ الْحَاسُوبَ يُفَكِّرُ بِطَرِيقَتِهِ!",
+          "sfx": [],
+          "visual_beat": "library: faris laughs, surprised"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "بِشَكْلٍ مَا، نَعَمْ. فَكُلُّ بَرْنَامِجٍ هُوَ خُطُوَاتٌ مُرَتَّبَةٌ تُوصِلُ إِلَى حَلّْ. فَالْخُوَارِزْمِيَّةُ هِيَ الْوَصْفَةُ، وَالْحَاسُوبُ هُوَ الطَّبَّاخُ الَّذِي يَتْبَعُهَا بِدِقَّةْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "object: a paper recipe card turns into a numbered list of steps beside a small paper computer"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "الْأَرْقَامُ وَالصِّفْرُ",
+      "layers": [
+        "manuscript_page",
+        "number_tiles",
+        "map_parchment",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَكَتَبَ أَيْضًا كِتَابًا عَنِ الْحِسَابِ بِالْأَرْقَامِ الْهِنْدِيَّةِ، شَرَحَ فِيهِ نِظَامَ الْخَانَاتِ وَالصِّفْرْ. وَعَنْ طَرِيقِ هَذَا الْكِتَابِ وَأَمْثَالِهِ، عَرَفَتْ أُورُوبَّا هَذِهِ الْأَرْقَامَ، فَسَمَّتْهَا الْأَرْقَامَ الْعَرَبِيَّةْ.",
+          "sfx": [
+            "paper_unfold"
+          ],
+          "visual_beat": "map: gold digits travel along a route line from Baghdad across the Mediterranean to Europe"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَالصِّفْرُ مُهِمٌّ إِلَى هَذِهِ الدَّرَجَةِ؟",
+          "sfx": [],
+          "visual_beat": "library: faris draws a zero in the air"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "جَرِّبْ أَنْ تَكْتُبَ الْعَدَدَ مِئَةً مِنْ غَيْرِ صِفْرٍ، وَسَتَعْرِفُ الْجَوَابْ! وَبِذَلِكَ صَارَ الْحِسَابُ أَسْهَلَ وَأَسْرَعَ لِلتُّجَّارِ وَالْعُلَمَاءِ وَالطُّلَّابْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: the digit one stands alone, then two paper zeros slide in beside it"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَوَضَعَ أَيْضًا جَدَاوِلَ فَلَكِيَّةً، وَكِتَابًا فِي الْجُغْرَافِيَا اسْمُهُ صُورَةُ الْأَرْضْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "map: a parchment world map unfolds with fine gold coordinate lines"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "الرِّيَاضِيَّاتُ وَالنُّجُومُ وَالْخَرَائِطُ مَعًا؟ كَانَ مَشْغُولًا جِدًّا!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَقَدْ ذَكَرَ فِي مُقَدِّمَةِ كِتَابِ الْجَبْرِ أَنَّهُ أَلَّفَهُ لِيَنْفَعَ النَّاسَ فِي الْمَوَارِيثِ وَالتِّجَارَةِ وَمِسَاحَةِ الْأَرَاضِي.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "object: paper icons of a market scale, a field plot and a family scroll line up under the book title"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَا الدَّرْسُ الَّذِي نَتَعَلَّمُهُ مِنْهُ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris rests his chin on his hands"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَنَّ الْمُشْكِلَةَ الْكَبِيرَةَ تَصْغُرُ حِينَ نُقَسِّمُهَا إِلَى خُطُوَاتٍ صَغِيرَةٍ وَاضِحَةٍ، ثُمَّ نَحُلُّهَا وَاحِدَةً تِلْوَ الْأُخْرَى. هَكَذَا فَكَّرَ الْخُوَارِزْمِيُّ، وَهَكَذَا يُفَكِّرُ كُلُّ مَنْ يَبْنِي شَيْئًا عَظِيمًا.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: a large paper block splits into small gold steps inside an illuminated frame"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "سَأُجَرِّبُ ذَلِكَ فِي وَاجِبِ الرِّيَاضِيَّاتِ غَدًا!",
+          "sfx": [],
+          "visual_beat": "library: faris pulls a notebook from his bag"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَحْسَنْتَ يَا فَارِسُ، فَالْعِلْمُ يَبْدَأُ بِخُطْوَةٍ وَاحِدَةْ.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa closes the book; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، مَا الْمَسْأَلَةُ الصَّعْبَةُ الَّتِي تُرِيدُونَ تَقْسِيمَهَا إِلَى خُطُوَاتٍ؟ شَارِكُونَا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer beside the lamp, notebook open"
+        }
+      ]
+    }
+  ]
+}

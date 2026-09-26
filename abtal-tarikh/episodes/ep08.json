@@ -1,0 +1,315 @@
+{
+  "id": "ep08",
+  "number": 8,
+  "title": "ابْنُ بَطُّوطَةَ",
+  "hero": {
+    "name": "أبو عبد الله محمد بن بطوطة",
+    "era": "1304–نحو 1369 م",
+    "place": "طنجة · فاس · من الصين إلى مالي"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "ابن بطوطة (بإملائه على ابن جزي)، تحفة النظار في غرائب الأمصار وعجائب الأسفار",
+    "Ross E. Dunn, The Adventures of Ibn Battuta (University of California Press)",
+    "Encyclopaedia Britannica: Ibn Baṭṭūṭah"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَنْ سَافَرَ أَكْثَرَ مِنْ مِئَةِ أَلْفِ كِيلُومِتْرٍ بِلَا طَائِرَةْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: a gold dotted route loops across the dark and ends in a question mark"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book",
+        "map_parchment"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "انْظُرْ يَا فَارِسُ، هَذِهِ الصَّفْحَةُ لَيْسَتْ صَفْحَةً وَاحِدَةً، بَلْ خَرِيطَةٌ تَنْفَتِحُ وَتَنْفَتِحُ!",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: the page unfolds again and again into a huge parchment map that spills over the desk"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، هَذِهِ الْخَرِيطَةُ أَطْوَلُ مِنْ ذِرَاعَيَّ! كَأَنَّهَا خَرِيطَةُ الْعَالَمِ كُلِّهْ!",
+          "sfx": [
+            "paper_unfold"
+          ],
+          "visual_beat": "library: faris stretches his arms wide across the map"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "تَقْرِيبًا، فَهِيَ رِحْلَاتُ أَعْظَمِ رَحَّالَةٍ فِي تَارِيخِنَا: ابْنِ بَطُّوطَةَ الطَّنْجِيّْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "map: a small paper Tangier lights up in gold at the map's western edge"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "طَنْجَةُ",
+      "layers": [
+        "sky_dawn",
+        "sea",
+        "city_tangier",
+        "caravan",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وُلِدَ فِي طَنْجَةَ بِالْمَغْرِبِ سَنَةَ أَلْفٍ وَثَلَاثِمِئَةٍ وَأَرْبَعٍ لِلْمِيلَادْ. وَكَانَ قَدْ دَرَسَ الْفِقْهَ فِي بَلَدِهِ، فَخَرَجَ طَالِبًا لِلْعِلْمِ كَمَا خَرَجَ حَاجًّا.",
+          "sfx": [
+            "waves",
+            "seagulls"
+          ],
+          "visual_beat": "popup: a paper Tangier of white houses by the sea at dawn"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَفِي الْحَادِيَةِ وَالْعِشْرِينَ مِنْ عُمُرِهِ، خَرَجَ وَحْدَهُ لِيَحُجَّ إِلَى مَكَّةَ الْمُكَرَّمَةْ.",
+          "sfx": [
+            "footsteps",
+            "wind_soft"
+          ],
+          "visual_beat": "popup: a lone young traveler silhouette with a staff walks out of the city gate onto the road east"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَحْدَهُ؟ أَلَمْ يَخَفْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris hugs his knees"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "يَذْكُرُ فِي رِحْلَتِهِ أَنَّهُ حَزِنَ لِفِرَاقِ أَهْلِهِ، لَكِنَّهُ مَضَى فِي طَرِيقِهِ بِعَزِيمَةْ. وَلَمْ يَكُنْ يَعْلَمُ أَنَّ هَذِهِ الرِّحْلَةَ سَتَسْتَمِرُّ قُرَابَةَ ثَلَاثِينَ عَامًا!",
+          "sfx": [
+            "camel_bells"
+          ],
+          "visual_beat": "popup: the traveler silhouette looks back once at the city, then joins a paper caravan on the horizon"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "مِنَ الْمَشْرِقِ إِلَى الصِّينِ",
+      "layers": [
+        "map_parchment",
+        "route_line",
+        "ships",
+        "caravan",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "زَارَ مِصْرَ وَالشَّامَ وَالْحِجَازَ وَالْعِرَاقَ وَفَارِسَ، ثُمَّ الْيَمَنَ وَشَرْقَ إِفْرِيقْيَا، وَآسِيَا الصُّغْرَى.",
+          "sfx": [
+            "camel_bells",
+            "desert_wind"
+          ],
+          "visual_beat": "map: a gold route draws from Tangier through Egypt, Sham, Arabia, Iraq and Persia on the parchment map"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَكَانَ يَسْأَلُ عَنْ عُلَمَاءِ كُلِّ مَدِينَةٍ يَصِلُ إِلَيْهَا، وَيَحْضُرُ دُرُوسَهُمْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "popup: the traveler silhouette sits in a circle of scholar silhouettes in a paper courtyard"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَكَيْفَ كَانَ يُسَافِرُ؟",
+          "sfx": [],
+          "visual_beat": "library: faris traces the long route with his finger"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "عَلَى الْإِبِلِ فِي الْقَوَافِلِ، وَعَلَى الْخَيْلِ، وَفِي السُّفُنِ الشِّرَاعِيَّةِ، وَأَحْيَانًا مَشْيًا عَلَى قَدَمَيْهْ. وَوَصَلَ إِلَى الْهِنْدِ، فَعَمِلَ قَاضِيًا فِي دِلْهِي سَنَوَاتٍ، ثُمَّ قَاضِيًا فِي جُزُرِ الْمَالْدِيفْ.",
+          "sfx": [
+            "hoofbeats",
+            "sail_flap",
+            "waves"
+          ],
+          "visual_beat": "popup: paper camels, horses and a sailing ship pass one after another along the gold route"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "قَاضٍ؟ ظَنَنْتُهُ مُسَافِرًا فَقَطْ!",
+          "sfx": [],
+          "visual_beat": "library: faris raises his eyebrows"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَ عَالِمًا بِالْفِقْهِ، فَكَانَ النَّاسُ يَحْتَاجُونَ إِلَيْهِ أَيْنَمَا ذَهَبْ. ثُمَّ سَافَرَ بَحْرًا حَتَّى الصِّينِ، وَعَادَ بَعْدَهَا إِلَى الْمَغْرِبِ، ثُمَّ زَارَ الْأَنْدَلُسَ وَبِلَادَ مَالِي فِي غَرْبِ إِفْرِيقْيَا.",
+          "sfx": [
+            "ship_creak",
+            "waves"
+          ],
+          "visual_beat": "map: the gold route reaches China, curls back home to Morocco, then dips south to Mali"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مِنَ الصِّينِ إِلَى مَالِي! هَذِهِ أَطْوَلُ رِحْلَةٍ سَمِعْتُ بِهَا!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَيُقَدِّرُ الْمُؤَرِّخُونَ أَنَّهُ قَطَعَ أَكْثَرَ مِنْ مِئَةِ أَلْفِ كِيلُومِتْرٍ، أَيْ أَكْثَرَ مِنْ دَوْرَتَيْنِ حَوْلَ الْأَرْضْ.",
+          "sfx": [
+            "whoosh_page"
+          ],
+          "visual_beat": "popup: a paper globe spins as a gold thread wraps around it twice"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "فَاسُ وَالْكِتَابُ",
+      "layers": [
+        "city_fes",
+        "lamp",
+        "scribe_silhouette",
+        "manuscript_page",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَكَيْفَ نَعْرِفُ كُلَّ هَذَا الْيَوْمَ؟",
+          "sfx": [],
+          "visual_beat": "library: faris folds a corner of the map back"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "حِينَ عَادَ إِلَى فَاسَ، طَلَبَ مِنْهُ السُّلْطَانُ أَبُو عِنَانٍ الْمَرِينِيُّ أَنْ يُمْلِيَ أَخْبَارَ رِحْلَتِهِ عَلَى كَاتِبٍ اسْمُهُ ابْنُ جُزَيّْ. فَصَارَ كِتَابًا عُنْوَانُهُ: تُحْفَةُ النُّظَّارِ فِي غَرَائِبِ الْأَمْصَارِ وَعَجَائِبِ الْأَسْفَارْ.",
+          "sfx": [
+            "quill_scratch",
+            "candle_flicker"
+          ],
+          "visual_beat": "popup: in a paper room in Fes, a traveler silhouette speaks while a scribe silhouette writes by lamplight"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَنُسَمِّيهِ الْيَوْمَ رِحْلَةَ ابْنِ بَطُّوطَةَ، وَفِيهِ وَصْفٌ لِلْمُدُنِ وَالْأَسْوَاقِ وَالطَّعَامِ وَعَادَاتِ الشُّعُوبْ.",
+          "sfx": [
+            "page_turn",
+            "market_bustle"
+          ],
+          "visual_beat": "object: manuscript pages stack into a bound book; tiny paper markets and cities pop up from its edges"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "إِذَنْ لَوْلَا الْكِتَابَةُ لَضَاعَتْ رِحْلَتُهُ!",
+          "sfx": [],
+          "visual_beat": "library: faris taps the closed book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "بِالضَّبْطِ، فَالتَّجْرِبَةُ الَّتِي لَا تُكْتَبُ تُنْسَى مَعَ الْأَيَّامْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "library: grandpa nods toward the shelves full of books"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "فَمَا الدَّرْسُ الْيَوْمَ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris sits cross-legged on the map"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَنَّ الْعَالَمَ كِتَابٌ كَبِيرٌ يَا فَارِسُ، وَكُلُّ شَعْبٍ صَفْحَةٌ فِيهِ. ابْنُ بَطُّوطَةَ تَعَلَّمَ مِنَ النَّاسِ، وَاحْتَرَمَ اخْتِلَافَهُمْ، ثُمَّ كَتَبَ مَا رَأَى. وَمَنْ عَرَفَ النَّاسَ، قَلَّ خَوْفُهُ مِنْهُمْ، وَكَثُرَ أَصْدِقَاؤُهْ.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: many small paper pages, each patterned differently, bind together into one gold book inside an illuminated frame"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "map_parchment"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَرُبَّمَا كَتَبْتُمْ يَوْمًا رِحْلَتَكُمْ أَنْتُمْ أَيْضًا.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa folds the map back into the book; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، لَوْ سَافَرْتُمْ إِلَى أَيِّ بَلَدٍ فِي الْعَالَمِ، أَيْنَ تَذْهَبُونَ أَوَّلًا؟ وَلِمَاذَا؟ اُكْتُبُوا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer holding a small paper compass"
+        }
+      ]
+    }
+  ]
+}

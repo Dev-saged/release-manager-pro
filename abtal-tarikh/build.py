@@ -59,6 +59,19 @@ def check_schema():
     return ok
 
 
+def check_episodes():
+    ok = True
+    for n in range(1, config.SERIES['episodes'] + 1):
+        path = ep_path(n)
+        errs = schema.load(path)[1] if path.is_file() else ['missing']
+        ok &= not errs
+        if errs:
+            print(f'  ✗ ep{n:02d} · {errs[0]}' + (f' (+{len(errs) - 1})' if len(errs) > 1 else ''))
+    if ok:
+        print(f'  ✓ {config.SERIES["episodes"]} episodes valid · diacritized · structure · limits · sources')
+    return ok
+
+
 def check_design():
     x0, y0, x1, y1 = design.SAFE_BOX
     pairs = (('gold', 'lapis'), ('gold', 'ink'), ('parchment', 'ink'), ('parchment', 'lapis_deep'))
@@ -72,6 +85,7 @@ def selftest():
     print('dependencies'); ok = deps.report()
     print('fonts'); ok &= check_fonts()
     print('schema'); ok &= check_schema()
+    print('episodes'); ok &= check_episodes()
     print('design'); ok &= check_design()
     print('sample')
     png = config.PATHS['out'] / 'test' / 'sample.png'

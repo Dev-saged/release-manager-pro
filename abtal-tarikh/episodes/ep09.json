@@ -1,0 +1,301 @@
+{
+  "id": "ep09",
+  "number": 9,
+  "title": "مُحَمَّدٌ الْفَاتِحُ",
+  "hero": {
+    "name": "السلطان محمد الثاني (الفاتح)",
+    "era": "1432–1481 م",
+    "place": "أدرنة · القسطنطينية (إسطنبول)"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "Kritovoulos, History of Mehmed the Conqueror",
+    "Steven Runciman, The Fall of Constantinople 1453 (Cambridge University Press)",
+    "Halil İnalcık, The Ottoman Empire: The Classical Age 1300–1600",
+    "Encyclopaedia Britannica: Mehmed II"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "كَيْفَ تُبْحِرُ السُّفُنُ فَوْقَ الْيَابِسَةْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: a gold paper ship rolls up a paper hill instead of a wave, ending in a question mark"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، لِمَاذَا عَلَى هَذِهِ الصَّفْحَةِ سُفُنٌ فَوْقَ الْجِبَالِ؟",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "library: faris points at a drawing of ships on hills in the open book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "لَيْسَ هَذَا لُغْزًا يَا فَارِسُ، بَلْ حَدَثَ حَقًّا قَبْلَ أَكْثَرَ مِنْ خَمْسِمِئَةِ عَامْ.",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "library: grandpa taps the drawing with a knowing smile"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "سُفُنٌ تَمْشِي عَلَى الْأَرْضِ؟ أَيْنَ حَدَثَ ذَلِكَ؟",
+          "sfx": [],
+          "visual_beat": "library: faris stares at the page"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "فِي الْقُسْطَنْطِينِيَّةِ، الْمَدِينَةِ الَّتِي نَعْرِفُهَا الْيَوْمَ بِاسْمِ إِسْطَنْبُولَ، وَبَطَلُ الْحِكَايَةِ هُوَ السُّلْطَانُ مُحَمَّدٌ الْفَاتِحْ.",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: a paper city on two shores with domes, towers and a narrow strait rises from the page"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "الْقُسْطَنْطِينِيَّةُ وَأَسْوَارُهَا",
+      "layers": [
+        "sky_day",
+        "sea",
+        "city_constantinople",
+        "walls",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وُلِدَ مُحَمَّدٌ الثَّانِي سَنَةَ أَلْفٍ وَأَرْبَعِمِئَةٍ وَاثْنَتَيْنِ وَثَلَاثِينَ لِلْمِيلَادِ، وَتَعَلَّمَ مُنْذُ صِغَرِهِ الْعُلُومَ وَاللُّغَاتِ وَفُنُونَ الْقِيَادَةْ. وَكَانَ أَبُوهُ السُّلْطَانُ مُرَادٌ الثَّانِي قَدْ أَحْضَرَ لَهُ كِبَارَ الْمُعَلِّمِينْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "popup: a young prince silhouette studies with a teacher silhouette under a paper arch"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مُعَلِّمُونَ لِلْأَمِيرِ الصَّغِيرِ؟ مِثْلَ مُعَلِّمِي فِي الْمَدْرَسَةِ؟",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، وَكَانُوا حَازِمِينَ مَعَهُ، فَتَعَلَّمَ الْجِدَّ وَالِانْضِبَاطَ مُنْذُ صِغَرِهْ.",
+          "sfx": [],
+          "visual_beat": "popup: the prince silhouette sits upright with books stacked neatly before him"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَصَارَ سُلْطَانًا عَلَى الدَّوْلَةِ الْعُثْمَانِيَّةِ وَهُوَ شَابٌّ، وَوَضَعَ نُصْبَ عَيْنَيْهِ هَدَفًا كَبِيرًا: فَتْحَ الْقُسْطَنْطِينِيَّةْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "map: a gold circle is drawn around the city on a parchment map between two seas"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَكَانَتْ مَدِينَةً قَوِيَّةً؟",
+          "sfx": [],
+          "visual_beat": "library: faris counts the paper towers"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَتْ مُحَاطَةً بِأَسْوَارٍ عَظِيمَةٍ، وَيَحْمِي مِينَاءَهَا سِلْسِلَةٌ ضَخْمَةٌ مَمْدُودَةٌ عَلَى مَدْخَلِ الْقَرْنِ الذَّهَبِيّْ.",
+          "sfx": [
+            "waves"
+          ],
+          "visual_beat": "object: a heavy paper chain stretches across the mouth of a gold-edged harbour"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "التَّخْطِيطُ وَالسُّفُنُ فَوْقَ التِّلَالِ",
+      "layers": [
+        "sky_night",
+        "stars",
+        "hills",
+        "rails",
+        "ships",
+        "fortress",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "فَبَدَأَ بِالتَّخْطِيطِ: بَنَى قَلْعَةَ رُومِلِي حِصَارْ عَلَى مَضِيقِ الْبُوسْفُورِ فِي نَحْوِ أَرْبَعَةِ أَشْهُرٍ فَقَطْ، وَجَهَّزَ مَدَافِعَ ضَخْمَةً مِنْ أَكْبَرِ مَا عُرِفَ فِي زَمَانِهِ، وَأُسْطُولًا مِنَ السُّفُنْ.",
+          "sfx": [
+            "stone_blocks",
+            "hammer_anvil"
+          ],
+          "visual_beat": "silhouette: a paper fortress rises stone by stone on the strait; cannon shapes stand as dark silhouettes, unfired"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَالسِّلْسِلَةُ؟ كَيْفَ تَجَاوَزَهَا؟",
+          "sfx": [],
+          "visual_beat": "library: faris points at the paper chain"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "هُنَا جَاءَتِ الْفِكْرَةُ الْعَجِيبَةُ: أَمَرَ بِمَدِّ طَرِيقٍ مِنَ الْأَلْوَاحِ الْخَشَبِيَّةِ الْمَدْهُونَةِ بِالزَّيْتِ فَوْقَ التِّلَالِ. وَفِي لَيْلَةٍ وَاحِدَةٍ، سُحِبَتْ عَشَرَاتُ السُّفُنِ فَوْقَ الْيَابِسَةِ، ثُمَّ أُنْزِلَتْ فِي مِيَاهِ الْقَرْنِ الذَّهَبِيِّ خَلْفَ السِّلْسِلَةْ!",
+          "sfx": [
+            "rope_pull",
+            "ship_creak"
+          ],
+          "visual_beat": "popup: under a starry sky, paper ships with gold sails slide on wooden rails over paper hills, pulled by rope teams in silhouette"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "كَمْ سَفِينَةً؟",
+          "sfx": [],
+          "visual_beat": "library: faris counts the paper ships"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "يَذْكُرُ الْمُؤَرِّخُونَ أَنَّهَا قَرِيبٌ مِنْ سَبْعِينَ سَفِينَةً، وَقَدِ اسْتَيْقَظَ أَهْلُ الْمَدِينَةِ فَرَأَوْهَا فِي الْمِينَاءِ أَمَامَهُمْ.",
+          "sfx": [
+            "waves",
+            "chime_soft"
+          ],
+          "visual_beat": "popup: dawn breaks and the paper ships float inside the harbour behind the chain"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "إِسْطَنْبُولُ",
+      "layers": [
+        "sky_dawn",
+        "city_constantinople",
+        "walls",
+        "gate",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "يَا لَهَا مِنْ فِكْرَةٍ ذَكِيَّةْ!",
+          "sfx": [],
+          "visual_beat": "library: faris claps once"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَبَعْدَ حِصَارٍ دَامَ نَحْوَ ثَلَاثَةٍ وَخَمْسِينَ يَوْمًا، دَخَلَ الْمَدِينَةَ فِي التَّاسِعِ وَالْعِشْرِينَ مِنْ مَايُو، سَنَةَ أَلْفٍ وَأَرْبَعِمِئَةٍ وَثَلَاثٍ وَخَمْسِينَ. وَكَانَ عُمُرُهُ يَوْمَئِذٍ وَاحِدًا وَعِشْرِينَ عَامًا، فَلُقِّبَ بِالْفَاتِحْ.",
+          "sfx": [
+            "drums_distant",
+            "gate_open"
+          ],
+          "visual_beat": "silhouette: symbolic paper walls with a great gate that opens at sunrise; banners rise over the towers; no fighting shown"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَمَاذَا فَعَلَ بَعْدَ الْفَتْحِ؟",
+          "sfx": [],
+          "visual_beat": "library: faris leans in"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "جَعَلَ الْمَدِينَةَ عَاصِمَةً لِدَوْلَتِهِ، وَأَمَّنَ سُكَّانَهَا، وَسَمَحَ لِلنَّصَارَى بِبَقَاءِ بَطْرِيَرْكِيَّتِهِمْ وَمُمَارَسَةِ عِبَادَتِهِمْ، وَشَجَّعَ الْعُلَمَاءَ وَالْبِنَاءَ فِيهَا. وَبَنَى فِيهَا الْمَدَارِسَ وَالْمَكْتَبَاتِ، فَصَارَتْ مَرْكَزًا لِلْعِلْمِ وَالتِّجَارَةِ قُرُونًا طَوِيلَةْ.",
+          "sfx": [
+            "market_bustle",
+            "birds_morning"
+          ],
+          "visual_beat": "popup: the paper city fills with markets, schools and new domes as the sun climbs"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَا الدَّرْسُ الَّذِي نَأْخُذُهُ مِنْهُ؟",
+          "sfx": [],
+          "visual_beat": "library: faris sits on the edge of the chair"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَنَّ الْعَقَبَةَ الْكَبِيرَةَ لَا تُوقِفُ صَاحِبَ الْفِكْرَةِ الذَّكِيَّةِ. حِينَ أُغْلِقَ الْبَحْرُ، فَكَّرَ الْفَاتِحُ فِي طَرِيقٍ لَمْ يَخْطُرْ عَلَى بَالِ أَحَدْ. فَإِذَا وَجَدْتَ بَابًا مُغْلَقًا، فَابْحَثْ عَنْ طَرِيقٍ آخَرَ، وَلَا تَسْتَسْلِمْ. وَالْفِكْرَةُ الذَّكِيَّةُ تَحْتَاجُ إِلَى صَبْرٍ وَتَخْطِيطٍ لِتَنْجَحْ.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: a closed paper door stays shut while a gold path curves around it inside an illuminated frame"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "رُبَّ فِكْرَةٍ صَغِيرَةٍ غَيَّرَتْ مَجْرَى التَّارِيخْ.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa closes the book; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، مَتَى وَجَدْتُمْ حَلًّا ذَكِيًّا لِمُشْكِلَةٍ بَدَتْ مُسْتَحِيلَةً؟ شَارِكُونَا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer holding a small paper ship"
+        }
+      ]
+    }
+  ]
+}

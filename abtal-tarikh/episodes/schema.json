@@ -20,6 +20,7 @@
       }
     },
     "target_seconds": { "type": "integer", "minimum": 120, "maximum": 180 },
+    "sources": { "type": "array", "items": { "type": "string", "minLength": 3 } },
     "cast": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/voice" }
@@ -45,10 +46,11 @@
     },
     "scene": {
       "type": "object",
-      "required": ["id", "setting", "lines"],
+      "required": ["id", "part", "setting", "lines"],
       "additionalProperties": false,
       "properties": {
         "id": { "type": "string", "pattern": "^s\\d{2}$" },
+        "part": { "enum": ["hook", "frame", "story", "lesson", "closing"] },
         "setting": { "type": "string", "minLength": 1 },
         "layers": { "type": "array", "items": { "$ref": "#/$defs/id" } },
         "lines": {

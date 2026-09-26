@@ -11,20 +11,21 @@
   "scenes": [
     {
       "id": "s01",
+      "part": "story",
       "setting": "مَخْطُوطَةٌ تَنْفَتِحُ عَلَى صَحْرَاءَ عِنْدَ الْفَجْرِ",
-      "layers": ["sky", "dunes_far", "dunes_near", "frame"],
+      "layers": ["sky_dawn", "dunes", "popup_frame"],
       "lines": [
         {
           "speaker": "narrator",
           "text_diacritized": "فِي قَدِيمِ الزَّمَانِ، عَاشَ بَطَلٌ شُجَاعٌ.",
           "sfx": ["page_turn", "wind_soft"],
-          "visual_beat": "the manuscript page unrolls; gold illumination draws the title frame"
+          "visual_beat": "popup: the manuscript page unrolls; gold illumination draws the title frame"
         },
         {
           "speaker": "hero",
           "text_diacritized": "سَأَحْمِي مَدِينَتِي مَهْمَا كَانَ الثَّمَنُ.",
-          "sfx": ["cloth_rustle"],
-          "visual_beat": "hero silhouette rises from the near dune layer; parallax drift"
+          "sfx": ["footsteps"],
+          "visual_beat": "popup: hero silhouette rises from the near dune layer; parallax drift"
         }
       ]
     }

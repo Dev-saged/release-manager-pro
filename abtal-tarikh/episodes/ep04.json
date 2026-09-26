@@ -1,0 +1,317 @@
+{
+  "id": "ep04",
+  "number": 4,
+  "title": "الزَّهْرَاوِيُّ",
+  "hero": {
+    "name": "أبو القاسم خلف بن عباس الزهراوي",
+    "era": "نحو 936–1013 م",
+    "place": "مدينة الزهراء · قرطبة"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "الزهراوي، التصريف لمن عجز عن التأليف (المقالة الثلاثون في الجراحة)",
+    "Encyclopaedia Britannica: Abū al-Qāsim al-Zahrāwī",
+    "M. S. Spink & G. L. Lewis, Albucasis on Surgery and Instruments (1973)"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَنْ رَسَمَ أَدَوَاتِ الْجِرَاحَةِ قَبْلَ أَلْفِ عَامْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: gold outlines of fine instruments arrange into a question mark over the dark shelves"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَدِّي، وَجَدْتُ فِي الرَّفِّ الْأَعْلَى كِتَابًا ثَقِيلًا جِدًّا!",
+          "sfx": [
+            "footsteps"
+          ],
+          "visual_beat": "library: faris steps down a ladder hugging a thick old book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَحْضِرْهُ بِرِفْقٍ، فَصَفَحَاتُهُ قَدِيمَةٌ جِدًّا. تَعَالَ يَا فَارِسُ، فَهَذِهِ الصَّفْحَةُ مَلِيئَةٌ بِرُسُومٍ عَجِيبَةٍ لِأَدَوَاتٍ دَقِيقَةْ.",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: the book opens onto pages of gold line drawings of slender instruments"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَا هَذِهِ؟ مَقَصَّاتٌ وَمَلَاقِطُ وَخُيُوطٌ؟",
+          "sfx": [
+            "metal_tools"
+          ],
+          "visual_beat": "library: faris leans in close to the drawings"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "إِنَّهَا مِنْ كِتَابِ طَبِيبٍ أَنْدَلُسِيٍّ عَظِيمٍ، اسْمُهُ أَبُو الْقَاسِمِ خَلَفُ بْنُ عَبَّاسٍ الزَّهْرَاوِيّْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: the physician's name is inked in gold across the top of the page"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "قُرْطُبَةُ وَمَدِينَةُ الزَّهْرَاءِ",
+      "layers": [
+        "sky_day",
+        "city_cordoba",
+        "palms",
+        "river",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "عَاشَ فِي الْقَرْنِ الرَّابِعِ الْهِجْرِيِّ، أَيِ الْعَاشِرِ الْمِيلَادِيِّ، فِي مَدِينَةِ الزَّهْرَاءِ قُرْبَ قُرْطُبَةَ فِي الْأَنْدَلُسْ.",
+          "sfx": [
+            "birds_morning",
+            "river_flow"
+          ],
+          "visual_beat": "popup: a paper Cordoba with its horseshoe arches and a bridge over the river rises from the page"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَكَانَتْ قُرْطُبَةُ يَوْمَئِذٍ مِنْ أَعْظَمِ مُدُنِ أُورُوبَّا، فِيهَا الْمَكْتَبَاتُ الْكَبِيرَةُ وَالْمَسَاجِدُ وَالْأَسْوَاقُ، وَكَانَ النَّاسُ يَأْتُونَ إِلَيْهَا مِنْ بِلَادٍ كَثِيرَةٍ لِيَطْلُبُوا الْعِلْمْ.",
+          "sfx": [
+            "market_bustle"
+          ],
+          "visual_beat": "popup: paper travelers with bundles walk toward the city gates as library windows glow"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَدِينَةٌ يَأْتِيهَا طُلَّابُ الْعِلْمِ مِنْ كُلِّ مَكَانٍ؟ أَتَمَنَّى لَوْ زُرْتُهَا!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "مَا زَالَ جَامِعُهَا الْكَبِيرُ قَائِمًا إِلَى الْيَوْمِ، يَزُورُهُ النَّاسُ مِنْ أَنْحَاءِ الْعَالَمْ.",
+          "sfx": [
+            "birds_morning"
+          ],
+          "visual_beat": "popup: rows of paper horseshoe arches in red and gold stretch into the distance"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَمَاذَا كَانَ يَعْمَلُ الزَّهْرَاوِيُّ؟",
+          "sfx": [],
+          "visual_beat": "library: faris looks from the city back to the drawings"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَ طَبِيبًا مَاهِرًا، وَاشْتَهَرَ خَاصَّةً بِالْجِرَاحَةِ، أَيْ بِعِلَاجِ الْمَرْضَى بِالْعَمَلِيَّاتْ.",
+          "sfx": [
+            "glass_clink"
+          ],
+          "visual_beat": "popup: a physician silhouette arranges instruments on a cloth in a calm, bright room"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "كِتَابُ التَّصْرِيفِ",
+      "layers": [
+        "manuscript_page",
+        "instruments",
+        "scholar_silhouette",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَتَبَ مَوْسُوعَةً طِبِّيَّةً كَبِيرَةً فِي ثَلَاثِينَ جُزْءًا، سَمَّاهَا: التَّصْرِيفُ لِمَنْ عَجَزَ عَنِ التَّأْلِيفْ. وَخَصَّصَ الْجُزْءَ الْأَخِيرَ مِنْهَا لِلْجِرَاحَةِ، وَرَسَمَ فِيهِ نَحْوَ مِئَتَيْ أَدَاةٍ، وَشَرَحَ كَيْفَ تُصْنَعُ وَكَيْفَ تُسْتَعْمَلْ.",
+          "sfx": [
+            "quill_scratch",
+            "page_turn"
+          ],
+          "visual_beat": "object: thirty paper volumes line up on a shelf; the last one opens and gold instrument drawings are inked one by one"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مِئَتَا أَدَاةٍ! هَذَا عَدَدٌ كَبِيرٌ جِدًّا! وَرَسَمَهَا بِنَفْسِهِ؟",
+          "sfx": [
+            "metal_tools"
+          ],
+          "visual_beat": "library: faris counts the drawings, amazed"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، وَكَثِيرٌ مِنْهَا مِنْ تَصْمِيمِهِ، وَبَعْضُهَا يُشْبِهُ أَدَوَاتٍ مَا زَالَ الْأَطِبَّاءُ يَسْتَعْمِلُونَهَا الْيَوْمْ.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "object: an old gold drawing slides beside a modern silhouette of the same tool and they match"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَكَتَبَ عَنْ عِلَاجِ الْأَسْنَانِ وَتَجْبِيرِ الْعِظَامِ، وَوَصَفَ خُيُوطًا دَقِيقَةً لِخِيَاطَةِ الْجُرُوحِ مِنَ الدَّاخِلْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "object: paper diagrams of a tooth and a splinted arm unfold side by side, clean line art"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "حَتَّى الْأَسْنَانُ؟ إِذَنْ هُوَ طَبِيبُ أَسْنَانٍ أَيْضًا!",
+          "sfx": [],
+          "visual_beat": "library: faris taps his own tooth and laughs"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَ عَالِمًا يَنْظُرُ إِلَى جِسْمِ الْإِنْسَانِ كُلِّهِ، وَيَبْحَثُ لِكُلِّ أَلَمٍ عَنْ عِلَاجْ.",
+          "sfx": [],
+          "visual_beat": "library: grandpa smiles and turns the page"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "مِنَ الْأَنْدَلُسِ إِلَى جَامِعَاتِ أُورُوبَّا",
+      "layers": [
+        "map_parchment",
+        "route_line",
+        "manuscript_page",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "وَبَعْدَ نَحْوِ قَرْنٍ وَنِصْفٍ، تُرْجِمَ كِتَابُهُ إِلَى اللَّاتِينِيَّةِ، فَصَارَ يُدَرَّسُ فِي جَامِعَاتِ أُورُوبَّا مِئَاتِ السِّنِينْ.",
+          "sfx": [
+            "paper_unfold"
+          ],
+          "visual_beat": "map: a gold route carries a paper book from Cordoba to Toledo and on to European university towns"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "يَعْنِي أَنَّ أَطِبَّاءَ أُورُوبَّا تَعَلَّمُوا مِنْهْ!",
+          "sfx": [],
+          "visual_beat": "library: faris follows the gold route with his finger"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، وَلِذَلِكَ يُلَقِّبُهُ كَثِيرٌ مِنَ الْمُؤَرِّخِينَ الْيَوْمَ بِأَبِي الْجِرَاحَةِ الْحَدِيثَةْ. وَكَانَ يُوصِي تَلَامِيذَهُ بِالرِّفْقِ بِالْمَرِيضِ، وَبِالدِّقَّةِ وَالصَّبْرِ، وَبِأَلَّا يَعْمَلُوا إِلَّا بِمَا يَعْرِفُونَهُ جَيِّدًا.",
+          "sfx": [
+            "chime_soft"
+          ],
+          "visual_beat": "popup: student silhouettes sit around a teacher silhouette who holds up a single instrument drawing"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَهَذِهِ نَصِيحَةٌ تَنْفَعُ كُلَّ طَالِبٍ، لَا الْأَطِبَّاءَ وَحْدَهُمْ!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "مَا الدَّرْسُ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris closes his hands around the lamp's warm glass"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَنَّ الْإِتْقَانَ رَحْمَةٌ يَا فَارِسُ. الزَّهْرَاوِيُّ أَتْقَنَ عَمَلَهُ حَتَّى صَارَ عِلْمُهُ يُخَفِّفُ آلَامَ النَّاسِ بَعْدَهُ بِقُرُونْ. وَكُلُّ عَمَلٍ تُتْقِنُهُ، مَهْمَا كَانَ صَغِيرًا، قَدْ يَنْفَعُ أَحَدًا لَا تَعْرِفُهْ.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: one precise gold stitch closes a paper tear inside an illuminated frame"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "مِثْلَ الْخَبَّازِ فِي حَيِّنَا، خُبْزُهُ الْمُتْقَنُ يَنْتَظِرُهُ الْجَمِيعُ كُلَّ صَبَاحْ!",
+          "sfx": [],
+          "visual_beat": "library: faris mimes holding a warm loaf, smiling"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "تَمَامًا يَا فَارِسْ.",
+          "sfx": [],
+          "visual_beat": "library: grandpa nods warmly"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "الْعِلْمُ الَّذِي يُتْقَنُ الْيَوْمَ يَصِلُ نَفْعُهُ إِلَى الْغَدِ الْبَعِيدْ.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa closes the book; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، مَا الْعَمَلُ الَّذِي تُحِبُّونَ أَنْ تُتْقِنُوهُ حَتَّى يَنْفَعَ النَّاسَ؟ أَخْبِرُونَا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer beside the lamp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "id": "ep01",
+  "number": 1,
+  "title": "طَارِقُ بْنُ زِيَادٍ",
+  "hero": {
+    "name": "طارق بن زياد",
+    "era": "92 هـ / 711 م",
+    "place": "طنجة · جبل طارق · الأندلس"
+  },
+  "cast": {
+    "faris": {
+      "role": "فَارِسٌ — الْحَفِيدُ"
+    },
+    "grandpa": {
+      "role": "الْجَدُّ"
+    }
+  },
+  "sources": [
+    "ابن عبد الحكم، فتوح مصر والمغرب",
+    "Encyclopaedia Britannica: Ṭāriq ibn Ziyād",
+    "Encyclopaedia of Islam, 2nd ed.: Ṭāriḳ b. Ziyād"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "part": "hook",
+      "setting": "ظَلَامُ الْمَكْتَبَةِ",
+      "layers": [
+        "library_shelves",
+        "lamp"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "هَلْ تَعْرِفُ جَبَلًا يَحْمِلُ اسْمَ قَائِدٍ مُسْلِمْ؟",
+          "sfx": [
+            "stinger_hook"
+          ],
+          "visual_beat": "hook: a gold paper question mark spins over the dark library shelves"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "part": "frame",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "اقْتَرِبْ يَا فَارِسُ، فَفِي هَذَا الْكِتَابِ الْقَدِيمِ جَوَابُ سُؤَالِكْ.",
+          "sfx": [
+            "footsteps",
+            "candle_flicker"
+          ],
+          "visual_beat": "library: grandpa sits at the desk under the lamp and pats the heavy closed book"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "جَبَلٌ يَحْمِلُ اسْمَ إِنْسَانٍ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris leans over the desk, eyes wide"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَعَمْ، إِنَّهُ جَبَلُ طَارِقٍ، وَمِنِ اسْمِهِ جَاءَتْ كَلِمَةُ جِبْرَالْتَارْ الَّتِي يَعْرِفُهَا الْعَالَمُ الْيَوْمْ. وَكُلُّ صَفْحَةٍ فِي هَذَا الْكِتَابِ تَحْكِي عَنْ بَطَلٍ حَقِيقِيٍّ، فَانْظُرْ جَيِّدًا.",
+          "sfx": [
+            "book_open",
+            "paper_unfold"
+          ],
+          "visual_beat": "popup: the book opens and a paper-cut strait of sea and gold cliffs unfolds from the pages"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "part": "story",
+      "setting": "مَضِيقٌ بَحْرِيٌّ عِنْدَ الْفَجْرِ",
+      "layers": [
+        "sky_dawn",
+        "sea",
+        "strait_cliffs",
+        "ships",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "قَبْلَ أَكْثَرَ مِنْ ثَلَاثَةَ عَشَرَ قَرْنًا، عَاشَ فِي شَمَالِ إِفْرِيقْيَا قَائِدٌ أَمَازِيغِيٌّ شُجَاعٌ اسْمُهُ طَارِقُ بْنُ زِيَادْ.",
+          "sfx": [
+            "page_turn",
+            "wind_soft"
+          ],
+          "visual_beat": "popup: a paper Tangier with white walls rises by the sea; a commander silhouette stands on the shore"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "كَانَ وَالِيًا عَلَى مَدِينَةِ طَنْجَةَ، يَعْمَلُ بِإِمْرَةِ الْقَائِدِ مُوسَى بْنِ نُصَيْرٍ، وَالِي إِفْرِيقْيَا. وَكَانَ مَعْرُوفًا بِالشَّجَاعَةِ وَحُسْنِ الْقِيَادَةِ، فَاخْتَارَهُ مُوسَى لِهَذِهِ الْمُهِمَّةِ الصَّعْبَةْ.",
+          "sfx": [
+            "waves"
+          ],
+          "visual_beat": "map: a parchment map shows North Africa and the narrow strait, Tangier marked in gold"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَكَيْفَ وَصَلَ إِلَى الْجَبَلْ؟",
+          "sfx": [],
+          "visual_beat": "library: faris points at the paper cliffs in the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "فِي سَنَةِ اثْنَتَيْنِ وَتِسْعِينَ لِلْهِجْرَةِ، أَيْ سَنَةِ سَبْعِمِئَةٍ وَإِحْدَى عَشْرَةَ لِلْمِيلَادِ، عَبَرَ الْمَضِيقَ بِالسُّفُنِ وَمَعَهُ نَحْوُ سَبْعَةِ آلَافِ رَجُلْ.",
+          "sfx": [
+            "sail_flap",
+            "ship_creak",
+            "waves"
+          ],
+          "visual_beat": "popup: paper ships with lapis sails cross the folded paper sea toward the gold cliff"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "سَبْعَةُ آلَافٍ فَقَطْ؟ هَذَا عَدَدٌ قَلِيلٌ لِعُبُورِ بَحْرٍ إِلَى بِلَادٍ لَا يَعْرِفُونَهَا!",
+          "sfx": [],
+          "visual_beat": "library: faris reacts, leaning over the book"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "نَزَلُوا عِنْدَ صَخْرَةٍ عَظِيمَةٍ عَلَى السَّاحِلِ، فَصَارَتْ تُعْرَفُ مُنْذُ ذَلِكَ الْيَوْمِ بِجَبَلِ طَارِقٍ، وَمَا زَالَ اسْمُهُ مَحْفُوظًا عَلَى الْخَرَائِطِ حَتَّى يَوْمِنَا هَذَا.",
+          "sfx": [
+            "seagulls"
+          ],
+          "visual_beat": "object: the great rock fills the frame and gold letters of its name are inked beside it"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "part": "story",
+      "setting": "سَهْلٌ عِنْدَ وَادِي لَكَّةَ",
+      "layers": [
+        "sky_day",
+        "hills",
+        "river",
+        "army_silhouettes",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَهَلْ وَاجَهَ جَيْشًا كَبِيرًا؟",
+          "sfx": [
+            "drums_distant"
+          ],
+          "visual_beat": "library: faris grips the edge of the desk"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "الْتَقَى بِجَيْشِ الْمَلِكِ لُذْرِيقَ قُرْبَ وَادِي لَكَّةَ، وَكَانَ ذَلِكَ الْجَيْشُ أَكْبَرَ عَدَدًا بِكَثِيرْ. وَأَرْسَلَ مُوسَى بْنُ نُصَيْرٍ خَمْسَةَ آلَافِ رَجُلٍ مَدَدًا، فَثَبَتَ الْجَمِيعُ حَتَّى تَحَقَّقَ النَّصْرْ. وَكَانَ الْجُنُودُ مِنَ الْأَمَازِيغِ وَالْعَرَبِ، يَجْمَعُهُمْ هَدَفٌ وَاحِدْ.",
+          "sfx": [
+            "drums_distant",
+            "hoofbeats"
+          ],
+          "visual_beat": "silhouette: two paper armies face each other as black silhouettes on a gold horizon by a river; banners only, no weapons raised"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَكَيْفَ انْتَصَرُوا وَهُمْ أَقَلُّ عَدَدًا؟",
+          "sfx": [],
+          "visual_beat": "library: faris looks up from the page, puzzled"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "بِالصَّبْرِ وَالثَّبَاتِ وَحُسْنِ التَّرْتِيبِ، وَبِقَائِدٍ يَعْرِفُ مَتَى يَتَقَدَّمُ وَمَتَى يَنْتَظِرْ. ثُمَّ وَاصَلَ طَارِقٌ طَرِيقَهُ حَتَّى دَخَلَ طُلَيْطِلَةَ، عَاصِمَةَ الْقُوطِ فِي ذَلِكَ الزَّمَانْ.",
+          "sfx": [
+            "gate_open"
+          ],
+          "visual_beat": "popup: a paper Toledo on its hill with a bridge and towers; the gate opens at sunrise"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "part": "story",
+      "setting": "قُرْطُبَةُ وَمَكْتَبَاتُهَا",
+      "layers": [
+        "sky_dusk",
+        "city_cordoba",
+        "palms",
+        "popup_frame"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "سَمِعْتُ أَنَّهُ أَحْرَقَ السُّفُنَ كَيْ لَا يُفَكِّرَ أَحَدٌ فِي الرُّجُوعْ!",
+          "sfx": [],
+          "visual_beat": "object: a small paper ship sits on the desk beside the book, untouched"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "هَذِهِ حِكَايَةٌ مَشْهُورَةٌ يَا فَارِسُ، لَكِنَّهَا لَا تَظْهَرُ فِي أَقْدَمِ الْكُتُبِ الَّتِي أَرَّخَتْ لِلْفَتْحِ، لِذَلِكَ يَشُكُّ فِيهَا كَثِيرٌ مِنَ الْمُؤَرِّخِينْ.",
+          "sfx": [
+            "page_turn"
+          ],
+          "visual_beat": "object: an old manuscript page with a gold question mark in its margin"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَمَّا الثَّابِتُ، فَهُوَ أَنَّ الْخَلِيفَةَ الْوَلِيدَ بْنَ عَبْدِ الْمَلِكِ اسْتَدْعَى طَارِقًا بَعْدَ ذَلِكَ إِلَى دِمَشْقَ، فَسَافَرَ إِلَيْهَا. وَبَقِيَتِ الْأَنْدَلُسُ قُرُونًا طَوِيلَةً مَنَارَةً لِلْعِلْمِ، بِمَكْتَبَاتِهَا وَمَسَاجِدِهَا وَعُلَمَائِهَا فِي الطِّبِّ وَالْفَلَكِ وَالزِّرَاعَةْ.",
+          "sfx": [
+            "paper_unfold",
+            "chime_soft"
+          ],
+          "visual_beat": "popup: a paper Cordoba skyline of arches, domes and palm trees rises; lamps light up in library windows"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "part": "lesson",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "lamp",
+        "desk",
+        "open_book"
+      ],
+      "lines": [
+        {
+          "speaker": "faris",
+          "text_diacritized": "فَمَا سِرُّ نَجَاحِهِ يَا جَدِّي؟",
+          "sfx": [],
+          "visual_beat": "library: faris sits back, thinking"
+        },
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "الشَّجَاعَةُ وَحْدَهَا لَا تَكْفِي يَا فَارِسُ. طَارِقٌ جَمَعَ بَيْنَ الشَّجَاعَةِ وَحُسْنِ التَّخْطِيطِ، فَعَرَفَ الطَّرِيقَ، وَاخْتَارَ الْمَكَانَ، وَصَبَرَ حِينَ اشْتَدَّ الْأَمْرْ. وَالتَّخْطِيطُ يُحَوِّلُ الْخَوْفَ إِلَى خُطُوَاتٍ وَاضِحَةْ.",
+          "sfx": [
+            "chime_lesson"
+          ],
+          "visual_beat": "lesson: a gold compass and a paper map fold together inside an illuminated frame"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "يَعْنِي أَنَّ الْبَطَلَ يُفَكِّرُ قَبْلَ أَنْ يَتَقَدَّمْ. وَيَصْبِرُ حِينَ يَصْعُبُ الطَّرِيقْ.",
+          "sfx": [],
+          "visual_beat": "library: faris nods and smiles"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "part": "closing",
+      "setting": "الْمَكْتَبَةُ الْقَدِيمَةُ",
+      "layers": [
+        "library_shelves",
+        "library_window",
+        "lamp",
+        "desk"
+      ],
+      "lines": [
+        {
+          "speaker": "grandpa",
+          "text_diacritized": "أَحْسَنْتَ يَا فَارِسْ.",
+          "sfx": [
+            "book_close"
+          ],
+          "visual_beat": "library: grandpa closes the book gently; a gold glint runs along its spine"
+        },
+        {
+          "speaker": "faris",
+          "text_diacritized": "وَأَنْتُمْ يَا أَصْدِقَائِي، مَا الْهَدَفُ الْكَبِيرُ الَّذِي تُخَطِّطُونَ لَهُ هَذَا الْعَامَ؟ اُكْتُبُوهُ لَنَا فِي التَّعْلِيقَاتْ!",
+          "sfx": [
+            "candle_flicker"
+          ],
+          "visual_beat": "closing: faris turns to the viewer beside the lamp and points to the empty page"
+        }
+      ]
+    }
+  ]
+}
