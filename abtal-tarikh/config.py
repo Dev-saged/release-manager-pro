@@ -7,7 +7,7 @@ PYPKG = ROOT / '.pypackages'
 if PYPKG.is_dir() and str(PYPKG) not in sys.path:
     sys.path.insert(0, str(PYPKG))
 
-VERSION = '0.4.0'
+VERSION = '0.5.0'
 
 SERIES = {
     'title': 'أبطال في التاريخ',
@@ -130,6 +130,17 @@ DESIGN = {
         'paper_shadow': ('ink', 0.10, 0.02),
         'lapis_deep': ('lapis', 0.24, 0.09),
         'gold_dim': ('gold', 0.62, 0.11),
+        'gold_light': ('gold', 0.88, 0.10),
+        'parchment_dim': ('gold', 0.84, 0.05),
+        'skin': ('gold', 0.80, 0.07),
+        'skin_shade': ('gold', 0.69, 0.07),
+        'wood': ('gold', 0.42, 0.07),
+        'wood_dark': ('gold', 0.30, 0.05),
+        'lapis_light': ('lapis', 0.55, 0.11),
+        'lapis_mist': ('lapis', 0.74, 0.05),
+        'emerald_deep': ('emerald', 0.38, 0.09),
+        'emerald_light': ('emerald', 0.70, 0.11),
+        'ink_soft': ('ink', 0.30, 0.04),
     },
 }
 
@@ -184,7 +195,7 @@ STAGE = {
     'grandpa': (0.66, 0.50),
     'faris': (0.28, 0.55),
     'book': (0.46, 0.64),
-    'lamp': (0.72, 0.26),
+    'lamp': (0.40, 0.56),
     'popup': (0.44, 0.40),
     'center': (0.44, 0.45),
 }
@@ -215,6 +226,23 @@ MIX = {
     'pan_width': 0.8,
     'duck': {'depth_db': -12.0, 'gate_db': -38, 'frame_s': 0.005, 'hold_s': 0.12, 'lookahead_s': 0.04, 'attack_s': 0.08, 'release_s': 0.35},
     'limiter': {'margin_db': 0.5, 'lookahead_ms': 3, 'release_db_s': 20, 'attempts': 4},
+}
+
+# المشاهد: قوالب SVG تُرسَم إطاراً إطاراً في Chromium بزمن افتراضي وتُمرَّر إلى ffmpeg
+VISUALS = {
+    # خلفية العصر لكل حلقة: تظهر في نافذة المكتبة وبطاقة الشارة وتؤطّر مشاهد القصة
+    'eras': {'ep00': 'libya', 'ep01': 'andalus', 'ep02': 'baghdad', 'ep03': 'bukhara', 'ep04': 'cordoba', 'ep05': 'cairo',
+             'ep06': 'hamadan', 'ep07': 'jerusalem', 'ep08': 'tangier', 'ep09': 'constantinople', 'ep10': 'libya'},
+    'parallax': (0.25, 0.55, 1.0, 1.4),
+    'focus': (475, 800),
+    'lead_s': 0.25,
+    'transitions': {'unfold': 1.1, 'fold': 0.6, 'turn': 0.7, 'medallion': 0.8, 'fade': 0.4},
+    'mouth_db': (-40, -10),
+    'workers': 4,
+    'capture': 'jpeg',
+    'mezzanine': {'vcodec': 'libx264', 'crf': 14, 'preset': 'veryfast', 'pix_fmt': 'yuv420p'},
+    'chromium_args': ('--disable-gpu', '--font-render-hinting=none', '--disable-lcd-text', '--force-color-profile=srgb',
+                      '--hide-scrollbars', '--disable-skia-runtime-opts', '--run-all-compositor-stages-before-draw'),
 }
 
 DEPS = {

@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import subprocess
 import sys
 import config
 from pipeline import deps, design, schema, stages, sample
@@ -113,6 +114,43 @@ def check_sfx():
     return ok and good
 
 
+def check_visuals():
+    import shutil
+    from pipeline import visuals
+    from visuals import beats
+    total, miss = 0, []
+    for n in range(1, config.SERIES['episodes'] + 1):
+        ep = schema.load(ep_path(n))[0]
+        for sc in ep['scenes']:
+            for ln in sc['lines']:
+                total += 1
+                c = beats.coverage(beats.parse(ln['visual_beat'], sc['layers'], ln['speaker'], f'ep{n:02d}'))
+                if c:
+                    miss.append(f'ep{n:02d} {sc["id"]}: {c}')
+    ok = not miss
+    print(f'  {"✓" if ok else "✗"} {total} visual beats → shots · {len(miss)} unmapped' + (f' · {miss[:3]}' if miss else ''))
+    tdir = config.PATHS['out'] / 'test'
+    try:
+        ep = schema.load(config.PATHS['fixture'])[0]
+        pl = visuals.plan(ep, {'tag': 'ep00', 'voice_dir': tdir / 'voice_edge', 'out': tdir})
+        out, _ = visuals.render(pl, tdir / 'video')
+        times = [(s['start'] + s['end']) / 2 for s in pl['shots']] + [pl['duration'] * .9]
+        st = visuals.stills(pl, tdir / 'video' / 'stills', times)
+        bad = [(r['frame'], r['audit']) for r in st if r['audit']['bad'] or r['audit']['named'] or r['audit']['unsafe']]
+        again = visuals.stills(pl, tdir / 'video' / 'again', times[:1], audit=False)
+        same = hashlib.sha256(open(st[0]['png'], 'rb').read()).digest() == hashlib.sha256(open(again[0]['png'], 'rb').read()).digest()
+        rigs = {visuals.rig_hash({**pl, 'era': era, 'title': era}, tdir / 'video' / 'rig') for era in ('andalus', 'libya')}
+        subprocess.run([deps.ffmpeg_bin(), '-hide_banner', '-loglevel', 'error', '-y', '-pattern_type', 'glob', '-i', str(tdir / 'video' / 'stills' / 'still_*.png'),
+                        '-vf', 'scale=270:480,tile=4x1', '-frames:v', '1', str(tdir / 'visuals_sheet.png')], check=True)
+        shutil.rmtree(tdir / 'video' / 'again', ignore_errors=True)
+        good = not bad and same and len(rigs) == 1
+        print(f'  {"✓" if good else "✗"} {out.relative_to(config.ROOT)} · {pl["frames"]} frames · palette & safe zones clean · deterministic · rig {rigs.pop()}' + (f' · {bad}' if bad else ''))
+    except Exception as e:
+        good = False
+        print(f'  ✗ render: {e}')
+    return ok and good
+
+
 def check_design():
     x0, y0, x1, y1 = design.SAFE_BOX
     pairs = (('gold', 'lapis'), ('gold', 'ink'), ('parchment', 'ink'), ('parchment', 'lapis_deep'))
@@ -130,6 +168,7 @@ def selftest():
     print('design'); ok &= check_design()
     print('voice'); ok &= check_voice()
     print('sfx'); ok &= check_sfx()
+    print('visuals'); ok &= check_visuals()
     print('sample')
     png = config.PATHS['out'] / 'test' / 'sample.png'
     try:
