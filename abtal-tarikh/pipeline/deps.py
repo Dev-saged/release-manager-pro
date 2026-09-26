@@ -5,7 +5,7 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
-from config import DEPS, PYPKG
+from config import DEPS, PYPKG, PATHS, PIPER
 
 
 def _run(cmd, timeout=60):
@@ -69,6 +69,16 @@ def check_playwright():
     return (True, f'{ver} · chromium ok') if chromium_path() else (False, f'{ver} · chromium missing')
 
 
+def piper_model():
+    return PATHS['piper'] / f'{PIPER["model"]}.onnx'
+
+
+def check_piper():
+    ok, detail = check_module('piper')
+    has = piper_model().is_file() and piper_model().with_suffix('.onnx.json').is_file()
+    return ok and has, f'{detail} · {PIPER["model"]} ' + ('ok' if has else 'missing')
+
+
 CHECKS = (
     ('ffmpeg', check_ffmpeg),
     ('edge-tts', lambda: check_module('edge_tts')),
@@ -83,6 +93,8 @@ def report():
         ok, detail = fn()
         ok_all &= ok
         print(f'  {"✓" if ok else "✗"} {name:<11} {detail}')
+    ok, detail = check_piper()
+    print(f'  {"✓" if ok else "○"} {"piper":<11} {detail} (offline fallback)')
     if not ok_all:
         print('  → python build.py --setup')
     return ok_all
@@ -94,4 +106,9 @@ def setup():
     if str(PYPKG) not in sys.path:
         sys.path.insert(0, str(PYPKG))
     importlib.invalidate_caches()
+    import urllib.request
+    PATHS['piper'].mkdir(parents=True, exist_ok=True)
+    for f in (piper_model(), piper_model().with_suffix('.onnx.json')):
+        if not f.is_file():
+            urllib.request.urlretrieve(f'{PIPER["url"]}/{f.name}', f)
     return r.returncode == 0

@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 import sys
 import config
 from pipeline import deps, design, schema, stages, sample
@@ -72,6 +73,24 @@ def check_episodes():
     return ok
 
 
+def check_voice():
+    from pipeline import voice
+    ep, ok = schema.load(config.PATHS['fixture'])[0], True
+    for eng in ('edge', 'piper'):
+        os.environ[config.TTS['engine_env']] = eng
+        try:
+            t = voice.run(ep, {'tag': 'ep00', 'voice_dir': config.PATHS['out'] / 'test' / f'voice_{eng}'})
+            i = t['integrity']
+            good = i['tokens'] == i['boundaries'] and not i['flagged'] and (t['engine'] == eng or eng == 'edge')
+            print(f'  {"✓" if good else "✗"} {eng:<6} → {t["engine"]} · {t["timings"]} · {i["boundaries"]}/{i["tokens"]} words · {t["duration"]:.1f}s')
+        except Exception as e:
+            good = False
+            print(f'  ✗ {eng}: {e}')
+        ok &= good
+    os.environ.pop(config.TTS['engine_env'], None)
+    return ok
+
+
 def check_design():
     x0, y0, x1, y1 = design.SAFE_BOX
     pairs = (('gold', 'lapis'), ('gold', 'ink'), ('parchment', 'ink'), ('parchment', 'lapis_deep'))
@@ -87,6 +106,7 @@ def selftest():
     print('schema'); ok &= check_schema()
     print('episodes'); ok &= check_episodes()
     print('design'); ok &= check_design()
+    print('voice'); ok &= check_voice()
     print('sample')
     png = config.PATHS['out'] / 'test' / 'sample.png'
     try:

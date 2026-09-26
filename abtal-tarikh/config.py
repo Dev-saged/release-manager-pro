@@ -7,10 +7,11 @@ PYPKG = ROOT / '.pypackages'
 if PYPKG.is_dir() and str(PYPKG) not in sys.path:
     sys.path.insert(0, str(PYPKG))
 
-VERSION = '0.2.0'
+VERSION = '0.3.0'
 
 SERIES = {
     'title': 'أبطال في التاريخ',
+    'title_diacritized': 'أَبْطَالٌ فِي التَّارِيخِ',
     'episodes': 10,
     # الإطار الثابت: فارس وجدّه في مكتبة قديمة؛ لا يتكلّم أيّ شخص تاريخي
     'cast': {'faris': 'فَارِسٌ — الْحَفِيدُ', 'grandpa': 'الْجَدُّ'},
@@ -88,6 +89,9 @@ PATHS = {
     'pipeline': ROOT / 'pipeline',
     'out': ROOT / 'out',
     'cache': ROOT / 'cache',
+    'voice': ROOT / 'voice',
+    'tts_cache': ROOT / 'cache' / 'tts',
+    'piper': ROOT / 'assets' / 'voices',
 }
 
 GOOGLE_FONTS_RAW = 'https://raw.githubusercontent.com/google/fonts/main/ofl'
@@ -134,9 +138,49 @@ SAFE = {
     'right': 0.12,
 }
 
+# الأصوات: edge-tts أولاً؛ «hero» محجوز (الشخصيات التاريخية لا تتكلّم في النصوص) ويُختار أوّل صوت متاح
+VOICES = {
+    'narrator': {'voice': 'ar-SA-HamedNeural', 'rate': '+0%', 'pitch': '+0Hz', 'piper_scale': 1.0},
+    'grandpa': {'voice': 'ar-EG-ShakirNeural', 'rate': '-8%', 'pitch': '-6Hz', 'piper_scale': 1.1},
+    'faris': {'voice': 'ar-AE-HamdanNeural', 'rate': '+8%', 'pitch': '+12Hz', 'piper_scale': 0.92},
+    'hero': {'voice': ('ar-KW-FahedNeural', 'ar-QA-MoazNeural'), 'rate': '+0%', 'pitch': '+0Hz', 'piper_scale': 1.0},
+}
+
+# بديل دون اتصال: Piper بصوت ar_JO-kareem وتوقيتات تقديرية
+PIPER = {
+    'model': 'ar_JO-kareem-medium',
+    'url': 'https://huggingface.co/rhasspy/piper-voices/resolve/main/ar/ar_JO/kareem/medium',
+}
+
+TTS = {
+    'engine_env': 'ABTAL_TTS',
+    'retries': 5,
+    'backoff_s': 1.0,
+    'concurrency': 4,
+    'integrity_attempts': 4,
+    's_per_letter': (0.028, 0.32),
+}
+
+# المعالجة: قصّ الصمت، نَفَس 180ms بين الأسطر، ضغط، توحيد المستوى
+VOICE_POST = {
+    'lead_pad_s': 0.04,
+    'tail_pad_s': 0.12,
+    'max_pause_s': 0.30,
+    'breath_s': 0.18,
+    'breath_dbfs': -44,
+    'scene_gap_s': 0.65,
+    'line_rms_dbfs': -20,
+    'peak_dbfs': -1.0,
+    'lufs': -16.0,
+    # ميزانية الصوت داخل مدة الحلقة؛ عند تجاوزها يُضبط الإيقاع بـ atempo (دون تغيير النبرة) والأنفاس ثابتة
+    'budget_s': VIDEO['max_s'] - 8,
+    'max_tempo': 1.15,
+    'filters': 'highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=8:release=120:makeup=2',
+}
+
 DEPS = {
     'python': ('edge_tts', 'numpy'),
-    'pip': ('edge-tts', 'numpy', 'imageio-ffmpeg'),
+    'pip': ('edge-tts', 'numpy', 'imageio-ffmpeg', 'piper-tts'),
     'node_playwright_hints': (Path('/opt/node22/lib/node_modules/playwright'),),
     'ffmpeg_encoders': ('libx264', 'aac'),
     'ffmpeg_filters': ('loudnorm', 'sidechaincompress', 'amix', 'adelay'),
