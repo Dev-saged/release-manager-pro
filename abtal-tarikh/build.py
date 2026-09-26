@@ -91,6 +91,28 @@ def check_voice():
     return ok
 
 
+def check_sfx():
+    from pipeline import sfx
+    from sfx.cues import CUE
+    ok = set(CUE) == set(config.CUES['sfx'])
+    print(f'  {"✓" if ok else "✗"} {len(CUE)}/{len(config.CUES["sfx"])} cues mapped' + ('' if ok else f' · {sorted(set(CUE) ^ set(config.CUES["sfx"]))}'))
+    stats = sfx.library()
+    bad = [k for k, v in stats.items() if not v['finite'] or v['peak_db'] > 0 or v['rms_db'] < -60]
+    ok &= not bad
+    print(f'  {"✓" if not bad else "✗"} {len(stats)} sounds → {config.PATHS["sfx_library"].relative_to(config.ROOT)}' + (f' · {bad}' if bad else ''))
+    try:
+        t = sfx.run(schema.load(config.PATHS['fixture'])[0],
+                    {'tag': 'ep00', 'voice_dir': config.PATHS['out'] / 'test' / 'voice_edge', 'out': config.PATHS['out'] / 'test'})
+        L, D = t['loudness'], t['duck']
+        good = (L['mode'] == 'linear' and abs(L['i'] - config.AUDIO['lufs']) <= 0.5 and L['tp'] <= config.AUDIO['true_peak']
+                and D['depth_db'] == config.MIX['duck']['depth_db'])
+        print(f'  {"✓" if good else "✗"} mix {L["i"]:.1f} LUFS · TP {L["tp"]:.1f} · {L["mode"]} · duck {D["depth_db"]:+.1f}dB · {len(t["cues"])} cues')
+    except Exception as e:
+        good = False
+        print(f'  ✗ mix: {e}')
+    return ok and good
+
+
 def check_design():
     x0, y0, x1, y1 = design.SAFE_BOX
     pairs = (('gold', 'lapis'), ('gold', 'ink'), ('parchment', 'ink'), ('parchment', 'lapis_deep'))
@@ -107,6 +129,7 @@ def selftest():
     print('episodes'); ok &= check_episodes()
     print('design'); ok &= check_design()
     print('voice'); ok &= check_voice()
+    print('sfx'); ok &= check_sfx()
     print('sample')
     png = config.PATHS['out'] / 'test' / 'sample.png'
     try:

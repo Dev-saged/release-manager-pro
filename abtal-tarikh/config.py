@@ -7,7 +7,7 @@ PYPKG = ROOT / '.pypackages'
 if PYPKG.is_dir() and str(PYPKG) not in sys.path:
     sys.path.insert(0, str(PYPKG))
 
-VERSION = '0.3.0'
+VERSION = '0.4.0'
 
 SERIES = {
     'title': 'أبطال في التاريخ',
@@ -75,7 +75,7 @@ RULES = {
 AUDIO = {
     'rate': 48000,
     'lufs': -14.0,
-    'true_peak': -1.5,
+    'true_peak': -1.0,
     'lra': 11,
     'acodec': 'aac',
     'bitrate': '192k',
@@ -92,6 +92,7 @@ PATHS = {
     'voice': ROOT / 'voice',
     'tts_cache': ROOT / 'cache' / 'tts',
     'piper': ROOT / 'assets' / 'voices',
+    'sfx_library': ROOT / 'sfx' / 'library',
 }
 
 GOOGLE_FONTS_RAW = 'https://raw.githubusercontent.com/google/fonts/main/ofl'
@@ -176,6 +177,44 @@ VOICE_POST = {
     'budget_s': VIDEO['max_s'] - 8,
     'max_tempo': 1.15,
     'filters': 'highpass=f=70,acompressor=threshold=-20dB:ratio=3:attack=8:release=120:makeup=2',
+}
+
+# مواضع العناصر على الشاشة (x, y) نسبةً من الإطار داخل منطقة الأمان؛ تشترك فيها المؤثرات (التوزيع الستيريو) والمشاهد
+STAGE = {
+    'grandpa': (0.66, 0.50),
+    'faris': (0.28, 0.55),
+    'book': (0.46, 0.64),
+    'lamp': (0.72, 0.26),
+    'popup': (0.44, 0.40),
+    'center': (0.44, 0.45),
+}
+
+# المزج: خلفية لكل مكان، مؤثرات الإشارات، خفض جانبي −12dB تحت الصوت، محدِّد، ثم loudnorm بمرورين إلى AUDIO
+MIX = {
+    'preroll_s': 0.35,
+    'ident_gap_s': (0.5, 0.1),
+    'tail_s': 2.5,
+    'tail_fade_s': 2.0,
+    'cut_lead_s': 0.3,
+    'beds': (
+        ('library', ('library_shelves',)),
+        ('sea', ('sea', 'strait_cliffs')),
+        ('city', ('city_', 'walls', 'gate')),
+        ('desert', ('sky_', 'dunes', 'hills', 'mountains', 'green_mountains', 'river', 'lake', 'palms', 'olive_trees',
+                    'caravan', 'riders', 'army_silhouettes')),
+    ),
+    'bed_default': 'library',
+    'bed_db': {'library': -44, 'desert': -33, 'sea': -32, 'city': -34},
+    'bed_fade_s': (0.5, 1.0),
+    'riser': {'dur_s': 1.0, 'db': -16},
+    'cue_lead_s': 0.1,
+    'cue_stagger_s': 0.45,
+    'span_pad_s': (0.3, 0.8),
+    'span_merge_s': 1.5,
+    'span_fade_s': (0.4, 0.6),
+    'pan_width': 0.8,
+    'duck': {'depth_db': -12.0, 'gate_db': -38, 'frame_s': 0.005, 'hold_s': 0.12, 'lookahead_s': 0.04, 'attack_s': 0.08, 'release_s': 0.35},
+    'limiter': {'margin_db': 0.5, 'lookahead_ms': 3, 'release_db_s': 20, 'attempts': 4},
 }
 
 DEPS = {

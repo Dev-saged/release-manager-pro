@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 voice/ep*/
 assets/voices/*.onnx*
+sfx/library/

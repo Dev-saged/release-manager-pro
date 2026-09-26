@@ -341,5 +341,22 @@ async def _run(ep, ctx):
     return timing
 
 
+def current(ep, out_dir):
+    # المخرجات مطابقة للنص والأصوات: لا يُعاد التوليد ولا تُلمس الملفات
+    p = out_dir / 'timing.json'
+    if os.environ.get(TTS['engine_env']) or not p.is_file():
+        return None
+    t = json.loads(p.read_text(encoding='utf-8'))
+    same = [(ln['id'], ln['text']) for ln in t['lines']] == [(it['id'], it['text_diacritized']) for it in scripts.lines(ep)]
+    same &= t['ident']['text'] == waqf(f'{SERIES["title_diacritized"]}: {ep["title"]}')
+    same &= all(v.get(k) == VOICES.get(sp, {}).get(k) for sp, v in t['voices'].items() for k in ('voice', 'rate', 'pitch'))
+    files = ['voice.wav', t['ident']['file']] + [ln['file'] for ln in t['lines']]
+    return t if same and t['engine'] == 'edge' and all((out_dir / f).is_file() for f in files) else None
+
+
 def run(ep, ctx):
+    t = current(ep, ctx.get('voice_dir') or PATHS['voice'] / ctx['tag'])
+    if t:
+        print(f'    current · {len(t["lines"])} lines · {t["duration"]:.1f}s voice · {t["engine"]}')
+        return t
     return asyncio.run(_run(ep, ctx))
