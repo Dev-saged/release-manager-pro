@@ -7,7 +7,7 @@ PYPKG = ROOT / '.pypackages'
 if PYPKG.is_dir() and str(PYPKG) not in sys.path:
     sys.path.insert(0, str(PYPKG))
 
-VERSION = '0.6.0'
+VERSION = '1.0.0'
 
 SERIES = {
     'title': 'أبطال في التاريخ',
@@ -247,9 +247,9 @@ VISUALS = {
 
 # التركيب: ترجمة كاريوكي، توقيع متحرّك، بطاقتا العنوان والخاتمة، وتصدير نهائي
 COMPOSE = {
-    'subs': {'family': 'subtitle', 'size': 52, 'max_w': 780, 'lines': 2, 'bottom_y': 1400, 'box_pad': (22, 12), 'box_alpha': 0x5A,
+    'subs': {'family': 'subtitle', 'size': 52, 'max_w': 780, 'lines': 2, 'bottom_y': 1400, 'box_pad': (22, 12), 'box_alpha': 0x26,
              'lead_s': .08, 'hold_s': .3, 'punct': '،.؟!:؛'},
-    'signature': {'text': 'إنتاج وتصميم: م. ساجد العبادلة', 'stamp_s': (.5, 3.5), 'stamp_y': 250, 'stamp_size': 38, 'size': 24,
+    'signature': {'text': 'إنتاج وتصميم: م. ساجد العبادلة', 'stamp_s': (0.0, 3.0), 'stamp_y': 250, 'stamp_size': 38, 'size': 24,
                   'every_s': 20, 'glide_s': .9, 'opacity': .75, 'margin': 44, 'top_y': 74, 'bottom_y': 1450},
     'follow': 'تابعونا',
     'title_fade_s': .4,
@@ -261,6 +261,17 @@ COMPOSE = {
     'aac_true_peak': -1.5,
     'profile': 'high',
     'level': '4.1',
+}
+
+# التحقّق النهائي: حدود كل اختبار
+VERIFY = {
+    'duration_s': (120, 180),
+    'lufs_tol': 1.0,
+    'sync_max_s': .080,
+    'contrast_min': 4.5,
+    'tonal': {'nfft': 4096, 'hop': 2048, 'prominence_db': 18, 'floor_dbfs': -72, 'min_hz': 80, 'max_s': .4},
+    'speech_dbfs': -40,
+    'signature_step_s': 1.0,
 }
 
 DEPS = {

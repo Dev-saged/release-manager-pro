@@ -287,7 +287,8 @@ def thud(kind='heavy', seed=7):
     if kind == 'knock':
         y = layer(burst(0.15, 0.03, 400, 1600, r), thump(220, 160, 0.1, 0.02) * 0.4)
         return norm(reverb(y, 0.3, 0.2, seed), -8)
-    y = layer(thump(70, 38, 0.7, 0.16), burst(0.4, 0.07, 30, 400, r) * 0.8)
+    # نقرة هابطة قصيرة وجسم ضجيجي منخفض: جيبٌ طويل عند 70Hz يرنّ في الصدى نغمةً كالطبل
+    y = layer(thump(70, 38, 0.08, 0.018) * 0.5, rms_norm(burst(0.7, 0.16, 25, 150, r), -12), burst(0.4, 0.07, 30, 400, r) * 0.8)
     if kind == 'stone':
         y = layer(y * 0.6, burst(0.3, 0.04, 800, 5000, r) * 0.5)
     if kind == 'distant':
@@ -344,8 +345,11 @@ def creak(d, rate, r):
     # احتكاك «التصاق-انزلاق»: قطار نبضات متغيّر يثير رنين الخشب
     n = n_of(d)
     rr = np.interp(np.linspace(0, 1, n), np.linspace(0, 1, 6), r.uniform(*rate, 6))
-    ph = np.cumsum(rr) / SR
-    imp = np.diff(np.floor(ph), prepend=0).astype(np.float32) * r.uniform(0.6, 1, n).astype(np.float32)
+    # فواصل غير منتظمة لكل نبضة: القطار المنتظم يولّد مشطاً توافقياً مسموعاً نغمةً كالقوس
+    imp, i = np.zeros(n, np.float32), 0
+    while i < n:
+        imp[i] = r.uniform(0.6, 1)
+        i += max(1, int(SR / rr[i] * r.uniform(0.7, 1.3)))
     m = n_of(0.02)
     tt = np.arange(m) / SR
     body = sum(np.sin(2 * np.pi * f * tt) * np.exp(-tt / 0.004) for f in r.uniform(500, 2400, 3))

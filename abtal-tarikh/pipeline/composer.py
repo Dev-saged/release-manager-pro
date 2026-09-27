@@ -7,9 +7,9 @@ import shutil
 import struct
 import subprocess
 import numpy as np
-from config import AUDIO, COMPOSE, FONTS, PATHS, VIDEO, VISUALS
+from config import AUDIO, COMPOSE, FONTS, PATHS, SERIES, VIDEO, VISUALS
 from pipeline import deps, design, visuals
-from pipeline.sfx import level, loudnorm, master
+from pipeline.sfx import level, loudnorm, master, program
 from pipeline.voice import ARABIC
 from sfx import synth as S
 
@@ -58,6 +58,31 @@ def display_tokens(text):
             out[-1] += ' ' + tok
         else:
             lead += tok + ' '
+    return out
+
+
+def acoustic_onsets(words, prog):
+    # بداية الكلمة المسموعة بعد وقفة: أول صعود 15dB فوق أرضية الوقفة قرب حدّ الكلمة (وسيط ثلاثة إطارات يُسقط الأصفار المفردة)
+    hop, gap, reach = 240, .15, .15
+    fr, n = hop / SR, len(prog) // hop
+    e = 10 * np.log10(np.mean(prog[:n * hop].reshape(n, hop) ** 2, 1) + 1e-12)
+    e = np.median(np.stack([np.roll(e, 1), e, np.roll(e, -1)]), 0)
+    out, prev = [], -1.0
+    for w in words:
+        t = None
+        if w['start'] - prev >= gap:
+            a = max(0, int((w['start'] - reach) / fr))
+            seg = e[a:int((w['start'] + reach + .1) / fr)]
+            fl = seg[:int((reach + .12) / fr)].min()
+            hi = np.nonzero(seg[int((reach - .03) / fr):] > fl + 25)[0]
+            if fl < -60 and len(hi):
+                i_hi = int((reach - .03) / fr) + hi[0]
+                sil = np.nonzero(seg[:i_hi] < fl + 8)[0]
+                up = np.nonzero(seg[sil[-1]:i_hi + 1] > fl + 15)[0] if len(sil) else []
+                if len(up) and 0 <= (a + sil[-1] + up[0]) * fr - w['start'] <= reach:
+                    t = (a + sil[-1] + up[0]) * fr
+        out.append(t)
+        prev = w['end']
     return out
 
 
@@ -150,13 +175,16 @@ def karaoke(lines, space, end_at):
         a, b = card[0]['start'] - C['lead_s'], min(card[-1]['end'] + C['hold_s'], nxt - .02, end_at)
         ev.append(f'Dialogue: 0,{ts(a)},{ts(b)},Karaoke,,0,0,0,plate,{{\\an2\\pos({design.SAFE_BOX[2] // 2},{C["bottom_y"] + py})\\p1\\bord0\\1c{ass_color("ink")}\\1a&H{C["box_alpha"]:02X}&}}'
                   f'{rounded(round(rw + 2 * px), round(len(rows) * lh + 2 * py), 20)}{{\\p0}}')
+        # البطاقة تظهر قبل أول كلمة بلا تذهيب، ثم يبدأ ذهب كل كلمة عند حدّها المنطوق تماماً
+        if card[0]['start'] - a >= .01:
+            ev.append(f'Dialogue: 1,{ts(a)},{ts(card[0]["start"])},Karaoke,,0,0,0,lead,' + '\\N'.join(' '.join(x['w'] for x in r) for r in rows))
         for i, w in enumerate(card):
-            s0, s1 = (a if i == 0 else w['start']), (card[i + 1]['start'] if i + 1 < len(card) else b)
+            s0, s1 = w['start'], (card[i + 1]['start'] if i + 1 < len(card) else b)
             if s1 - s0 < .01:
                 continue
             text = '\\N'.join(' '.join(f'{{\\c{gold}}}{x["w"]}{{\\c{base}}}' if x is w else x['w'] for x in r) for r in rows)
             ev.append(f'Dialogue: 1,{ts(s0)},{ts(s1)},Karaoke,,0,0,0,karaoke,{text}')
-    stats['events'] = len(ev) - stats['cards']
+    stats['events'] = sum(',karaoke,' in e for e in ev)
     return ev, stats
 
 
@@ -177,8 +205,8 @@ def signature(end_at, w_stamp, w_small):
     bw, bh = int(w_stamp + 64), int(G['stamp_size'] * 1.9)
     ms = int((t1 - t0) * 1000)
     ev = [
-        f'Dialogue: 1,{ts(t0)},{ts(t1)},Signature,,0,0,0,stamp,{{\\an5\\pos({cx},{cy})\\p1\\bord3\\3c{gold}\\1a&HFF&\\fscx150\\fscy150\\3a&HFF&\\t(0,260,\\fscx100\\fscy100\\3a&H00&)\\t({ms - 300},{ms},\\3a&HFF&)}}{rounded(bw, bh, 22)}{{\\p0}}',
-        f'Dialogue: 2,{ts(t0)},{ts(t1)},Signature,,0,0,0,stamp,{{\\an5\\pos({cx},{cy})\\fs{fs}\\frz-4\\fscx160\\fscy160\\alpha&HFF&\\t(0,260,\\frz0\\fscx100\\fscy100\\alpha&H00&)}}{text}',
+        f'Dialogue: 1,{ts(t0)},{ts(t1)},Signature,,0,0,0,stamp,{{\\an5\\pos({cx},{cy})\\p1\\bord3\\3c{gold}\\1a&HFF&\\fscx150\\fscy150\\3a&H60&\\t(0,260,\\fscx100\\fscy100\\3a&H00&)\\t({ms - 300},{ms},\\3a&HFF&)}}{rounded(bw, bh, 22)}{{\\p0}}',
+        f'Dialogue: 2,{ts(t0)},{ts(t1)},Signature,,0,0,0,stamp,{{\\an5\\pos({cx},{cy})\\fs{fs}\\frz-4\\fscx160\\fscy160\\alpha&H60&\\t(0,260,\\frz0\\fscx100\\fscy100\\alpha&H00&)}}{text}',
         f'Dialogue: 3,{ts(t0)},{ts(t1)},Signature,,0,0,0,shimmer,{{\\an5\\pos({cx},{cy})\\fs{fs}\\c{glow}\\bord0\\blur2\\clip({int(cx + w_stamp / 2)},{cy - G["stamp_size"]},{int(cx + w_stamp / 2 + 70)},{cy + G["stamp_size"]})'
         f'\\t(350,1500,\\clip({int(cx - w_stamp / 2 - 70)},{cy - G["stamp_size"]},{int(cx - w_stamp / 2)},{cy + G["stamp_size"]}))}}{text}',
         f'Dialogue: 0,{ts(t0)},{ts(t1)},Signature,,0,0,0,glow,{{\\an5\\pos({cx},{cy})\\fs{fs}\\1a&HFF&\\bord9\\blur12\\3c{gold}\\3a&HFF&\\t(200,600,\\3a&H40&)\\t(600,1600,\\3a&HC0&)}}{text}',
@@ -219,7 +247,7 @@ def ink_bbox(ass_path, fonts, D):
 def card_plan(base, ep, kind, dur):
     shot = {'id': 'card', 'scene': 'card', 'part': 'card', 'type': 'card', 'start': 10.0, 'end': 10.0 + dur, 'speaker': None,
             'd': {}, 'actors': {}, 'subject': None, 'fx': [], 'state': {}, 'next': {}, 'mini': None, 'prevLib': None, 'rise': False, 'tr': {'kind': 'cut', 'dur': 0}}
-    card = {'kind': kind, 'number': ep['number'], 'title': ep['title'], 'era': ep['hero'].get('era', ''), 'place': ep['hero'].get('place', ''),
+    card = {'kind': kind, 'number': ep['number'], 'title': ep['title'], 'series': SERIES['title_diacritized'], 'era': ep['hero'].get('era', ''), 'place': ep['hero'].get('place', ''),
             'credit': COMPOSE['signature']['text'], 'follow': COMPOSE['follow']}
     return {**base, 'duration': 10.0 + dur + 5, 'frames': int(round((10.0 + dur) * base['fps'])), 'shots': [shot], 'card': card,
             'voice': {'level': '0', 'shape': 'a', 'who': '-'}}
@@ -237,7 +265,7 @@ def final_audio(mix, dst, D, t_stamp, t_outro, tag):
     y = np.zeros((2, n), np.float32)
     y[:, :min(n, x.shape[1])] = x[:, :n]
     w = level(S.whoosh(.55, 1.25, hash(tag) & 0xFFFF), COMPOSE['stamp_whoosh_db'], False)
-    S.place(y, S.pan_sweep(w, .45, -.45), int((t_stamp - .3) * SR))
+    S.place(y, S.pan_sweep(w, .45, -.45), int(max(0.0, t_stamp - .3) * SR))
     o = level(S.whoosh(.7, .9, 7), COMPOSE['outro_whoosh_db'], False)
     S.place(y, S.pan_sweep(o, -.3, .3), int((t_outro - .35) * SR))
     S.place(y, S.pan(level(S.page('heavy', 9), COMPOSE['outro_whoosh_db'] - 2, False), 0), int((t_outro + .2) * SR))
@@ -281,6 +309,11 @@ def run(ep, ctx):
     ident = next(s for s in tl['segments'] if s['id'] == 'ident')
 
     lines = spoken_words(timing, tl)
+    # بعد الوقفات: ذهب الكلمة يبدأ عند بدايتها المسموعة لا عند حدّ المُركِّب إن تأخّر الصوت عنه
+    flat = [w for ws in lines for w in ws]
+    for w, t in zip(flat, acoustic_onsets(flat, program(timing, vdir)[0])):
+        if t is not None:
+            w['start'] = t
     uniq = sorted({w['w'] for ws in lines for w in ws})
     C, G = COMPOSE['subs'], COMPOSE['signature']
     widths = measure(uniq + [' '], C['size'], 400, cdir)

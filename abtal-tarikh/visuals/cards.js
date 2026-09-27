@@ -13,10 +13,11 @@ function titleCard(lt, t) {
   const u = E.out(seg(lt, 0, .8)), L = eraLayers(PL.era, t);
   return layers({ x: FX, y: FY, z: 1.03 + .02 * lt }, L) + rect(0, 0, W, H, P.lapis_deep, { opacity: .35 }) +
     g({ transform: `translate(0 ${R(40 * (1 - u))})`, opacity: R(u) }, frameIllum(E.io(seg(lt, .1, 1.2)), 90, 330, 770, 930)) +
-    logo(475, 470, .3, lt) + g({ opacity: R(seg(lt, .4, .9)) }, rect(335, 560, 280, 64, P.lapis, { rx: 32 }), label(475, 604, `الحلقة ${arDigits(CD.number)}`, 38, P.parchment)) +
-    inkText(475, 790, CD.title, 104, seg(lt, .5, 1.6), { col: P.lapis_deep }) +
-    line(lerp(475, 230, E.io(seg(lt, 1, 1.8))), 860, lerp(475, 720, E.io(seg(lt, 1, 1.8))), 860, P.gold, 5) +
-    g({ opacity: R(seg(lt, 1.3, 1.9)) }, label(475, 960, CD.era, 44, P.wood), label(475, 1040, CD.place, 36, P.lapis)) +
+    logo(475, 440, .26, lt) + inkText(475, 598, CD.series, 44, seg(lt, .2, .9), { col: P.lapis }) +
+    g({ opacity: R(seg(lt, .4, .9)) }, rect(335, 626, 280, 64, P.lapis, { rx: 32 }), label(475, 670, `الحلقة ${arDigits(CD.number)}`, 38, P.parchment)) +
+    inkText(475, 830, CD.title, 104, seg(lt, .5, 1.6), { col: P.lapis_deep }) +
+    line(lerp(475, 230, E.io(seg(lt, 1, 1.8))), 895, lerp(475, 720, E.io(seg(lt, 1, 1.8))), 895, P.gold, 5) +
+    g({ opacity: R(seg(lt, 1.3, 1.9)) }, label(475, 985, CD.era, 44, P.wood), label(475, 1060, CD.place, 36, P.lapis)) +
     dust(t, 475, 800, 420, 520, 34, 'carddust');
 }
 function outroCard(lt, t) {

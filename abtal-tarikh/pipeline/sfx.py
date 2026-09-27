@@ -261,7 +261,8 @@ def library(dest=PATHS['sfx_library']):
     return stats
 
 
-def run(ep, ctx):
+def build(ep, ctx):
+    # خطّ البرنامج وحافلة المؤثرات قبل الخفض والإتقان؛ يستعمله المزج والتحقّق من خلوّ المؤثرات من النغمات
     tag = ctx['tag']
     vdir = ctx.get('voice_dir') or PATHS['voice'] / tag
     timing = json.loads((vdir / 'timing.json').read_text(encoding='utf-8'))
@@ -287,6 +288,13 @@ def run(ep, ctx):
     events = sorted(risers(bus, segs, tag) + cues(bus, lines, tag), key=lambda e: e['start'])
     k = S.n_of(MIX['tail_fade_s'])
     bus[:, -k:] *= np.cos(np.linspace(0, np.pi / 2, k))
+    return {'timing': timing, 'prog': prog, 'bus': bus, 'total': total, 'ident': ident, 'lines': lines, 'segs': segs, 'runs': runs, 'events': events}
+
+
+def run(ep, ctx):
+    tag = ctx['tag']
+    b = build(ep, ctx)
+    timing, prog, bus, total, ident, lines, segs, runs, events = (b[k] for k in ('timing', 'prog', 'bus', 'total', 'ident', 'lines', 'segs', 'runs', 'events'))
     gain, ducked = duck(prog)
     adir = ctx['out'] / 'audio'
     adir.mkdir(parents=True, exist_ok=True)

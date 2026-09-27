@@ -165,6 +165,18 @@ def check_composer():
         return False
 
 
+def check_verify():
+    from pipeline import verify
+    tdir = config.PATHS['out'] / 'test'
+    try:
+        r = verify.run(schema.load(config.PATHS['fixture'])[0], {'tag': 'ep00', 'voice_dir': tdir / 'voice_edge', 'out': tdir, 'final_dir': tdir}, fixture=True)
+        print(f'  ✓ 9 checks on the fixture · sync ≤{r["sync"]["max_ms"]:.0f}ms · contrast {r["contrast"]["min"]:.1f} · tone ≤{r["tonal"]["longest_s"]:.2f}s')
+        return True
+    except Exception as e:
+        print(f'  ✗ verify: {e}')
+        return False
+
+
 def check_design():
     x0, y0, x1, y1 = design.SAFE_BOX
     pairs = (('gold', 'lapis'), ('gold', 'ink'), ('parchment', 'ink'), ('parchment', 'lapis_deep'))
@@ -184,6 +196,7 @@ def selftest():
     print('sfx'); ok &= check_sfx()
     print('visuals'); ok &= check_visuals()
     print('composer'); ok &= check_composer()
+    print('verify'); ok &= check_verify()
     print('sample')
     png = config.PATHS['out'] / 'test' / 'sample.png'
     try:
@@ -215,7 +228,11 @@ def main():
     if not deps.report():
         return 1
     eps = range(1, config.SERIES['episodes'] + 1) if a.all else (a.ep,)
-    return 0 if all([build_episode(n) for n in eps]) else 1
+    ok = all([build_episode(n) for n in eps])
+    if ok and a.all:
+        from pipeline import verify
+        ok = verify.summary([f'ep{n:02d}' for n in eps])['passed']
+    return 0 if ok else 1
 
 
 if __name__ == '__main__':
