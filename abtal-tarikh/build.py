@@ -132,8 +132,8 @@ def check_visuals():
     tdir = config.PATHS['out'] / 'test'
     try:
         ep = schema.load(config.PATHS['fixture'])[0]
-        pl = visuals.plan(ep, {'tag': 'ep00', 'voice_dir': tdir / 'voice_edge', 'out': tdir})
-        out, _ = visuals.render(pl, tdir / 'video')
+        visuals.run(ep, {'tag': 'ep00', 'voice_dir': tdir / 'voice_edge', 'out': tdir})
+        out, pl = tdir / 'video' / 'visuals.mp4', json.loads((tdir / 'video' / 'plan.json').read_text(encoding='utf-8'))
         times = [(s['start'] + s['end']) / 2 for s in pl['shots']] + [pl['duration'] * .9]
         st = visuals.stills(pl, tdir / 'video' / 'stills', times)
         bad = [(r['frame'], r['audit']) for r in st if r['audit']['bad'] or r['audit']['named'] or r['audit']['unsafe']]
@@ -149,6 +149,20 @@ def check_visuals():
         good = False
         print(f'  ✗ render: {e}')
     return ok and good
+
+
+def check_composer():
+    from pipeline import composer
+    tdir = config.PATHS['out'] / 'test'
+    try:
+        m = composer.run(schema.load(config.PATHS['fixture'])[0], {'tag': 'ep00', 'voice_dir': tdir / 'voice_edge', 'out': tdir, 'final_dir': tdir})
+        v, sub, ink = m['probe']['video'], m['subs'], m['ink']['box']
+        print(f'  ✓ {m["file"]} · {v.split(",")[0]} · {m["loudness_final"]["i"]:.1f} LUFS · TP {m["loudness_final"]["tp"]:.1f} · faststart · '
+              f'{sub["cards"]} karaoke cards ≤{sub["max_lines"]} lines · ink x<{ink[2] + 1} y<{ink[3] + 1} · {m["cover"]}')
+        return True
+    except Exception as e:
+        print(f'  ✗ compose: {e}')
+        return False
 
 
 def check_design():
@@ -169,6 +183,7 @@ def selftest():
     print('voice'); ok &= check_voice()
     print('sfx'); ok &= check_sfx()
     print('visuals'); ok &= check_visuals()
+    print('composer'); ok &= check_composer()
     print('sample')
     png = config.PATHS['out'] / 'test' / 'sample.png'
     try:

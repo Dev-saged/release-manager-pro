@@ -123,8 +123,8 @@ def plan(ep, ctx):
     }
 
 
-def page_html(pl):
-    src = ''.join(f'<script src="{(ROOT / f).as_uri()}"></script>' for f in JS)
+def page_html(pl, extra=()):
+    src = ''.join(f'<script src="{(ROOT / f).as_uri()}"></script>' for f in JS + tuple(extra))
     return f'''<!doctype html><html lang="ar"><head><meta charset="utf-8"><style>
 {design.fontface_css()}
 html,body{{margin:0;width:{pl['w']}px;height:{pl['h']}px;overflow:hidden;background:{pl['palette']['lapis_deep']}}}
@@ -172,12 +172,12 @@ def count_frames(path):
     return int(re.findall(r'frame=\s*(\d+)', err)[-1])
 
 
-def render(pl, vdir, workers=None, frames=None):
+def render(pl, vdir, workers=None, frames=None, extra=()):
     vdir.mkdir(parents=True, exist_ok=True)
     cache = vdir / 'parts'
     cache.mkdir(exist_ok=True)
     page = vdir / 'page.html'
-    page.write_text(page_html(pl), encoding='utf-8')
+    page.write_text(page_html(pl, extra), encoding='utf-8')
     a, b = frames or (0, pl['frames'])
     w = max(1, min(workers or VISUALS['workers'], (b - a) // 30 or 1))
     cuts = [a + (b - a) * k // w for k in range(w + 1)]
@@ -201,11 +201,11 @@ def rig_hash(pl, vdir):
     return node([job(page, **{'list': [], 'video': None, 'rig': True})], vdir)[0]['rig']
 
 
-def stills(pl, vdir, times, audit=True):
+def stills(pl, vdir, times, audit=True, extra=()):
     # لقطات ثابتة وفحص الألوان ومناطق الأمان
     vdir.mkdir(parents=True, exist_ok=True)
     page = vdir / 'page.html'
-    page.write_text(page_html(pl), encoding='utf-8')
+    page.write_text(page_html(pl, extra), encoding='utf-8')
     frames = sorted({min(pl['frames'] - 1, int(t * pl['fps'])) for t in times})
     r = node([job(page, **{'list': frames, 'video': None, 'capture': 'png', 'stills': str(vdir / 'still_%f.png'), 'audit': [f / pl['fps'] for f in frames] if audit else None})], vdir)[0]
     return [{'frame': f, 'png': png, 'audit': a} for f, png, a in zip(frames, r['stills'], r['audit'] or [None] * len(frames))]

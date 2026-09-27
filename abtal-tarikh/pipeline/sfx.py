@@ -227,26 +227,26 @@ def loudnorm(src, af, dst=None):
     return {k: (v if k == 'normalization_type' else float(v)) for k, v in json.loads(err[a:err.index('}', a) + 1]).items()}
 
 
-def master(x, dst):
+def master(x, dst, tp=AUDIO['true_peak']):
     # مرور 1 قياس؛ المحدِّد يضمن إمكان التطبيع الخطّي؛ مرور 2 loudnorm خطّي بالقيم المقيسة؛ ثم قياس الملف الناتج
     L, probe = MIX['limiter'], 'loudnorm=print_format=json'
     m0 = loudnorm(x, probe)
     margin = L['margin_db']
     for attempt in range(1, L['attempts'] + 1):
-        y, reduction = limit(x, AUDIO['true_peak'] - margin - (AUDIO['lufs'] - m0['input_i']))
+        y, reduction = limit(x, tp - margin - (AUDIO['lufs'] - m0['input_i']))
         m = loudnorm(y, probe)
-        excess = m['input_tp'] + AUDIO['lufs'] - m['input_i'] - AUDIO['true_peak']
+        excess = m['input_tp'] + AUDIO['lufs'] - m['input_i'] - tp
         if excess <= 0:
             break
         margin += excess + 0.1
     lra = min(50.0, max(AUDIO['lra'], float(np.ceil(m['input_lra'] + 1))))
-    r = loudnorm(y, f'loudnorm=I={AUDIO["lufs"]}:TP={AUDIO["true_peak"]}:LRA={lra}:measured_I={m["input_i"]}:'
+    r = loudnorm(y, f'loudnorm=I={AUDIO["lufs"]}:TP={tp}:LRA={lra}:measured_I={m["input_i"]}:'
                     f'measured_TP={m["input_tp"]}:measured_LRA={m["input_lra"]}:measured_thresh={m["input_thresh"]}:'
                     f'offset={m["target_offset"]}:linear=true:print_format=json', dst)
     f = loudnorm(dst, probe)
     out = {'i': f['input_i'], 'tp': f['input_tp'], 'lra': f['input_lra'], 'mode': r['normalization_type'],
            'premix_i': m0['input_i'], 'limiter_db': reduction, 'attempts': attempt}
-    if out['mode'] != 'linear' or abs(out['i'] - AUDIO['lufs']) > 0.5 or out['tp'] > AUDIO['true_peak']:
+    if out['mode'] != 'linear' or abs(out['i'] - AUDIO['lufs']) > 0.5 or out['tp'] > tp:
         raise ValueError(f'loudness {out}')
     return out
 
