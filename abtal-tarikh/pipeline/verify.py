@@ -278,7 +278,7 @@ def run(ep, ctx, fixture=False):
         'signature': check_signature(cdir, meta, ass),
         'contrast': check_contrast(),
         'safe': check_safe(pl, ep, meta, out / 'verify'),
-        'tonal': check_tonal(ep, ctx, audio, words),
+        'tonal': check_tonal(ep, ctx, audio, words + tl['ident']['words']),
         'phases': check_phases(ep, ctx, tl, timing, vmeta, pl, meta, fixture),
     }
     R['rig'] = visuals.rig_hash(pl, out / 'verify' / 'rig')

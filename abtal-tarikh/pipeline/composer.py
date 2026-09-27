@@ -166,13 +166,16 @@ def karaoke(lines, space, end_at):
     (px, py), lh = C['box_pad'], C['size'] * ass_scale(C['family'])
     all_cards = [c for ws in lines for c in cards(ws, space)]
     ev, stats = [], {'cards': len(all_cards), 'events': 0, 'max_w': 0.0, 'max_lines': 0}
+    # تمهيد البطاقة التالية لا يمحو ذهب آخر كلمة في سابقتها: إطاران على الأقل
+    starts = [c[0]['start'] - C['lead_s'] for c in all_cards]
+    starts = [min(max(s, all_cards[n - 1][-1]['start'] + 2 / VIDEO['fps'] + .02), all_cards[n][0]['start']) if n else s for n, s in enumerate(starts)]
     for n, card in enumerate(all_cards):
         rows = layout(card, space, C['max_w'], C['lines'])
         rw = max(sum(w['width'] for w in r) + space * (len(r) - 1) for r in rows)
         stats['max_lines'] = max(stats['max_lines'], len(rows))
         stats['max_w'] = max(stats['max_w'], rw)
-        nxt = all_cards[n + 1][0]['start'] - C['lead_s'] if n + 1 < len(all_cards) else end_at
-        a, b = card[0]['start'] - C['lead_s'], min(card[-1]['end'] + C['hold_s'], nxt - .02, end_at)
+        nxt = starts[n + 1] if n + 1 < len(all_cards) else end_at
+        a, b = starts[n], min(card[-1]['end'] + C['hold_s'], nxt - .02, end_at)
         ev.append(f'Dialogue: 0,{ts(a)},{ts(b)},Karaoke,,0,0,0,plate,{{\\an2\\pos({design.SAFE_BOX[2] // 2},{C["bottom_y"] + py})\\p1\\bord0\\1c{ass_color("ink")}\\1a&H{C["box_alpha"]:02X}&}}'
                   f'{rounded(round(rw + 2 * px), round(len(rows) * lh + 2 * py), 20)}{{\\p0}}')
         # البطاقة تظهر قبل أول كلمة بلا تذهيب، ثم يبدأ ذهب كل كلمة عند حدّها المنطوق تماماً
